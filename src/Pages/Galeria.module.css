@@ -1,0 +1,23 @@
+.galeria {
+  padding: 2rem 0 6rem 0;
+}
+
+.galeria-text {
+  padding-bottom: 5rem;
+  text-align: center;
+  color: #333333;
+}
+
+.galeria-text h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  user-select: none;
+  margin-bottom: 7.5px;
+  letter-spacing: 0.5px;
+}
+
+.galeria-text h2 {
+  font-size: 15px;
+  letter-spacing: 0.2px;
+}

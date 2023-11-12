@@ -1,0 +1,135 @@
+.footer {
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 2rem 4rem;
+}
+
+.footer hr {
+  background-color: #1a1a1a;
+  height: 1px;
+  border: 0;
+}
+
+.socials {
+  display: flex;
+  justify-content: right;
+}
+
+.socials h2 {
+  align-self: center;
+  font-size: 18px;
+  margin-right: 3px;
+  user-select: none;
+  font-weight: bold;
+}
+
+.socials svg {
+  margin: 0px 1px;
+}
+
+.Facebook svg,
+.Instagram svg,
+.Linkedin svg {
+  fill: #1a1a1a;
+  color: #1a1a1a;
+  transition: all 200ms ease-in-out;
+}
+
+.Linkedin svg:hover {
+  fill: #0077b5;
+}
+
+.Facebook svg:hover {
+  color: #3b5998;
+}
+
+.Instagram svg:hover {
+  color: #f00075;
+}
+
+.boxes-wrap {
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem 0;
+}
+
+.footer-box h3 {
+  width: fit-content;
+  position: relative;
+  user-select: none;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-box h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 50%;
+  height: 2px;
+  background-color: #1a1a1a;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.container svg {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-70%);
+  transform: translateY(-70%);
+}
+
+.icon-container {
+  width: 32px;
+}
+
+.footer-box p,
+.footer-box a {
+  position: relative;
+  margin-bottom: 8px;
+  font-size: 17px;
+  line-height: 18px;
+  color: #1a1a1a;
+  transition: all 0.4s;
+  width: fit-content;
+}
+
+.footer-box a:hover {
+  color: #ddb621;
+}
+
+.copyright {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright p {
+  display: flex;
+  user-select: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.copyright svg {
+  transform: translateY(-1px);
+  margin-right: 3px;
+}
+
+.copyright a {
+  color: #000;
+  transition: all 0.4s;
+  border-bottom: 1px solid #000;
+  font-weight: bold;
+}
+
+.copyright a:hover {
+  color: #ddb621;
+  border-bottom: 1px solid #ddb621;
+}

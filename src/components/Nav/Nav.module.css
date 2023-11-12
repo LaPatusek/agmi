@@ -1,0 +1,45 @@
+.nav {
+  padding: 1rem 6rem;
+  display: grid;
+  grid-template-columns: 450px 60%;
+}
+
+.navbar {
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+  width: fit-content;
+}
+
+.nav-link {
+  position: relative;
+  justify-self: center;
+  padding: 10px 30px;
+  font-size: 26px;
+  color: #1a1a1a;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+
+.mid-link::before,
+.mid-link::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #adadad;
+  border-radius: 3px;
+}
+
+.mid-link::before {
+  left: 0;
+}
+
+.mid-link::after {
+  right: 0;
+}
+
+.nav-link:hover {
+  color: #ddb621;
+}
