@@ -3,6 +3,7 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import Galeria from './Pages/Galeria';
 import Kontakt from './Pages/Kontakt';
 import Main from './Pages/Main';
+import Rekrutacja from './Pages/Rekrutacja';
 import Services from './Pages/Services';
 import Footer from './components/Footer/Footer';
 import Nav from './components/Nav/Nav';
@@ -35,7 +36,8 @@ function App() {
           <Route path='/main' element={<Main />} />
           <Route path='/galeria' element={<Galeria />} />
           <Route path='/kontakt' element={<Kontakt />} />
-          <Route path='/uslugi' element={<Services />} />
+          <Route path='/oferta' element={<Services />} />
+          <Route path='/rekrutacja' element={<Rekrutacja />} />
           <Route path='*' element={<Main />} />
         </Routes>
       </main>

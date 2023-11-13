@@ -1,0 +1,47 @@
+.header {
+  position: relative;
+}
+
+.header img {
+  position: relative;
+  width: 100%;
+  max-height: 75vh;
+  object-fit: cover;
+}
+
+.header h1 {
+  position: absolute;
+  top: 25%;
+  left: 4%;
+  z-index: 5;
+  color: #f1f1f1;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 52px;
+  user-select: none;
+  text-transform: uppercase;
+}
+
+.header span {
+  color: var(--main-yellow);
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: calc(100% - 2px);
+  width: 30%;
+  background: linear-gradient(
+    90deg,
+    rgba(26, 26, 26, 1) 0%,
+    rgba(26, 26, 26, 0.9) 5%,
+    rgba(26, 26, 26, 0.8) 35%,
+    rgba(26, 26, 26, 0.6) 55%,
+    rgba(26, 26, 26, 0.4) 75%,
+    rgba(26, 26, 26, 0.2) 95%,
+    rgba(26, 26, 26, 0) 100%
+  );
+  z-index: 3;
+}

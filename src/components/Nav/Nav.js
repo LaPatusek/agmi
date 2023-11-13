@@ -14,8 +14,8 @@ const Nav = () => {
         </div>
 
         <div className={`${styles.navbar} grid`}>
-          <Link to='/uslugi' className={styles['nav-link']}>
-            Usługi
+          <Link to='/oferta' className={styles['nav-link']}>
+            Oferta
           </Link>
           <Link to='/galeria' className={`${styles['nav-link']} ${styles['mid-link']}`}>
             Galeria

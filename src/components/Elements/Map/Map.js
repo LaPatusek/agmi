@@ -21,7 +21,7 @@ const Map = () => {
   };
 
   return (
-    <div className={styles.map}>
+    <div className={styles.map} id='mapa'>
       <div className={styles['google-map']}>
         <GoogleMapReact
           bootstrapURLKeys={{

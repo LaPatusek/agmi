@@ -1,13 +1,9 @@
-import { ArrowCircleDown2, Call, Location } from 'iconsax-react';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import Map from '../components/Elements/Map/Map';
 import useInput from '../components/Hooks/useInput';
-import styles from './Kontakt.module.css';
+import styles from './Rekrutacja.module.css';
 
 const Kontakt = () => {
   const [formIsSent, setFormIsSent] = useState(false);
-  const iconSize = 36;
 
   const {
     value: enteredName,
@@ -106,50 +102,52 @@ const Kontakt = () => {
   return (
     <div className={styles.kontakt}>
       <div className={styles['kontakt-header']}>
-        <h1>Skontaktuj się z nami</h1>
+        <h1>Dołącz do naszego zespołu</h1>
         <h2>
-          On this page you can find our contact details and a simple form you{' '}
+          On this page you can find our contact details and a simple form you
           <br />
           can submit if you have specific queries you would like our feedback on
         </h2>
       </div>
 
-      <div className={`${styles.dane} grid`}>
-        <div className={styles.container}>
-          <Call variant='Bold' size={iconSize} />
-          <p>tel. 17 783 43 31</p>
-          <p> fax. 17 783 43 11</p>
-        </div>
+      <div className={styles['wymagania-wrap']}>
+        <h3>KIEROWCA W TRANSPORCIE MIĘDZYNARODOWYM</h3>
 
-        <div className={styles.container}>
-          <Location variant='Bold' size={iconSize} />
+        <h4>Wymagania:</h4>
+        <ol>
+          <li>Doświadczenie zawodowe</li>
+          <li>Dyspozycyjność</li>
+          <li>Samodzielność, skrupulatność oraz rzetelność</li>
+        </ol>
+
+        <h4>Oferujemy:</h4>
+        <ol>
+          <li>Atrakcyjne wynagrodzenie</li>
+          <li>Przyjazną atmosferę</li>
+          <li>Umowa o pracę lub kontrakt B2B</li>
+        </ol>
+      </div>
+
+      <div className={`${styles['form-wrap']} grid`}>
+        <div className={styles['form-header']}>
+          <h3>Aplikuj już dziś</h3>
+          <h4>
+            Aplikacje zawierające CV z adnotacją „Wyrażam zgodę na przetwarzanie
+            i administrowanie moimi danymi osobowymi dla potrzeb rekrutacji
+            zgodnie z Ust. Z dn. 29.08.1997 r. o Ochronie danych osobowych (
+            dz.U. Nr 133 poz 833)” prosimy przesyłać na adres:
+          </h4>
+
           <p>
             AGMI Transport <br /> ul hr. Wandy Tarnowskiej 1 <br /> 35-322
             Rzeszów
           </p>
-
-          <Link to='/kontakt#mapa' className={`${styles['map-button']} grid`}>
-            <span>Zobacz na mapie</span>
-            <ArrowCircleDown2 size={'28'} variant='Bold' />
-          </Link>
+          <p>
+            lub w formie elektronicznej na adres: biuro@agmitransport.pl
+            <br />
+            lub wysłać za pomocą poniższego formularza:
+          </p>
         </div>
-
-        <div className={styles.container}>
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            width={iconSize}
-            height={iconSize}
-            fill='#1a1a1a'
-            viewBox='0 0 512 512'
-          >
-            <path d='M424 80H88a56.06 56.06 0 00-56 56v240a56.06 56.06 0 0056 56h336a56.06 56.06 0 0056-56V136a56.06 56.06 0 00-56-56zm-14.18 92.63l-144 112a16 16 0 01-19.64 0l-144-112a16 16 0 1119.64-25.26L256 251.73l134.18-104.36a16 16 0 0119.64 25.26z' />
-          </svg>
-          <p>biuro@agmitransport.pl</p>
-        </div>
-      </div>
-
-      <div className={`${styles['form-wrap']} grid`}>
-        <h3>Wyślij do nas wiadomość</h3>
         <form onSubmit={formHandler}>
           <div className={`${styles['rows-wrap']} grid`}>
             <div className={`${styles['first-row']} grid`}>
@@ -222,7 +220,6 @@ const Kontakt = () => {
               />
             </div>
           </div>
-
           <div className={`${styles['full-size']} grid`}>
             <label
               htmlFor='topic'
@@ -241,7 +238,6 @@ const Kontakt = () => {
               onBlur={topicBlurHandler}
             />
           </div>
-
           <div className={`${styles['full-size']} grid`}>
             <label
               htmlFor='wiadomosc'
@@ -259,8 +255,13 @@ const Kontakt = () => {
               onBlur={messageBlurHandler}
             />
           </div>
-          <p className={styles.required}>*Wymagane</p>
-
+          <div className={styles['required-cv']}>
+            <div className={styles['cv-input']}>
+              <label htmlFor='CV'>Twoje CV*</label> <br />
+              <input type='file' id='CV' />
+            </div>
+            <p className={styles.required}>*Wymagane</p>
+          </div>
           <div className={styles['buttons-wrap']}>
             <button onClick={resetHandler}>Reset</button>
             <button type='submit' value={'Send'}>
@@ -274,7 +275,6 @@ const Kontakt = () => {
           )}
         </form>
       </div>
-      <Map/>
     </div>
   );
 };

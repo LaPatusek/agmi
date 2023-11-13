@@ -133,3 +133,31 @@
   color: #ddb621;
   border-bottom: 1px solid #ddb621;
 }
+
+@media screen and (max-width: 900px) {
+  .footer {
+    padding: 2rem 1.5rem;
+  }
+
+  .socials {
+    justify-content: space-between;
+  }
+
+  .boxes-wrap {
+    padding: 1rem 0 2rem 0;
+  }
+
+  .footer-box {
+    margin-top: 1rem;
+  }
+
+  .boxes-wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .copyright a {
+    width: min-content;
+    text-align: center;
+    border: 0;
+  }
+}

@@ -62,6 +62,10 @@
 }
 
 @media screen and (max-width: 900px) {
+  .my-masonry-grid {
+    width: 95%;
+  }
+
   .my-masonry-grid_column > div {
     margin-bottom: 15px;
   }

@@ -21,3 +21,22 @@
   font-size: 15px;
   letter-spacing: 0.2px;
 }
+
+@media screen and (max-width: 900px) {
+  .galeria {
+    padding: 4rem 0;
+  }
+
+  .galeria-text {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .galeria-text h1 {
+    font-size: 34px;
+  }
+
+  .galeria-text h2 {
+    font-size: 17px;
+  }
+}
