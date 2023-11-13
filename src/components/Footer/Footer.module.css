@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   background-color: #f0f0f0;
-  padding: 2rem 4rem;
+  padding: 1.5rem 8rem;
 }
 
 .footer hr {
@@ -100,7 +100,7 @@
 }
 
 .footer-box a:hover {
-  color: #ddb621;
+  color: #9c9c9c;
 }
 
 .copyright {
@@ -130,8 +130,8 @@
 }
 
 .copyright a:hover {
-  color: #ddb621;
-  border-bottom: 1px solid #ddb621;
+  color: #9c9c9c;
+  border-bottom: 1px solid #9c9c9c;
 }
 
 @media screen and (max-width: 900px) {

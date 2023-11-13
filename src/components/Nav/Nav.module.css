@@ -1,12 +1,22 @@
 .nav {
   padding: 1rem 6rem;
   display: grid;
-  grid-template-columns: 450px 60%;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+}
+
+.black {
+  background-color: #1a1a1a;
+}
+
+.black-link {
+  color: #f1f1f1 !important;
 }
 
 .navbar {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   align-content: center;
+  justify-self: right;
   width: fit-content;
 }
 

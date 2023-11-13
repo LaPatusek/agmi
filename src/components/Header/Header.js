@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className={styles.header}>
       <h1>
-        Z nami <br /> <span>jesteś</span> <br /> zawsze <span> na czas </span>
+        Z nami <span>jesteś</span> <br /> zawsze <span> na czas </span>
       </h1>
       <img src={background} alt='' />
     </div>
