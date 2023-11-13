@@ -26,7 +26,7 @@ const Main = () => {
           <div className={styles.container}>
             <img src={temporaryImage} alt='' />
             <div className={styles['container-text']}>
-              <h3>Bus o ładowności 1.5 - 3.5 tony</h3>
+              <h3>Standardowymi plandekami o ładowności do 24 ton</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <Link to='/oferta'>
                 Więcej informacji <ArrowRight2 size={'18'} />
@@ -36,7 +36,7 @@ const Main = () => {
           <div className={styles.container}>
             <img src={temporaryImage} alt='' />
             <div className={styles['container-text']}>
-              <h3>Bus o ładowności 1.5 - 3.5 tony</h3>
+              <h3>Pojazdami typu zestaw o długości 15,4m.</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <Link to='/oferta'>
                 Więcej informacji <ArrowRight2 size={'18'} />
@@ -48,7 +48,7 @@ const Main = () => {
           <div className={styles.container}>
             <img src={temporaryImage} alt='' />
             <div className={styles['container-text']}>
-              <h3>Bus o ładowności 1.5 - 3.5 tony</h3>
+              <h3>Pojazdami chłodniczymi oraz izotermami</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <Link to='/oferta'>
                 Więcej informacji <ArrowRight2 size={'18'} />
@@ -58,7 +58,7 @@ const Main = () => {
           <div className={styles.container}>
             <img src={temporaryImage} alt='' />
             <div className={styles['container-text']}>
-              <h3>Bus o ładowności 1.5 - 3.5 tony</h3>
+              <h3>Transport kontenerów morskich</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <Link to='/oferta'>
                 Więcej informacji <ArrowRight2 size={'18'} />

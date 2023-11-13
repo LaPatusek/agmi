@@ -1,0 +1,105 @@
+.services-wrap {
+  padding: 4rem 6rem 8rem 6rem;
+}
+
+.services-header {
+  margin-bottom: 4rem;
+}
+
+.services-header h1 {
+  font-size: 54px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 52px;
+  user-select: none;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.services-header h2 {
+  font-size: 28px;
+  line-height: 30px;
+  width: 55%;
+  color: #000;
+}
+
+.three-in-row {
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+  margin-bottom: 6rem;
+}
+
+.container {
+  justify-self: center;
+  align-self: center;
+  padding: 2rem 0.5rem;
+}
+
+.container h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.container h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.container ol {
+  line-height: 17px;
+}
+
+.container li > span {
+  font-weight: bold;
+  user-select: none;
+}
+
+.freeze,
+.ocean {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.freeze-text h3 {
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 52px;
+  text-align: right;
+  color: #333333;
+}
+
+.freeze-text h4 {
+  font-size: 18px;
+  line-height: 22px;
+  margin-left: 30px;
+}
+
+.freeze-text ol {
+  margin-left: 30px;
+}
+
+.freeze-text ol > li,
+.ocean-text ol > li {
+  font-size: 17px;
+}
+
+.freeze-text li > span,
+.ocean-text li > span {
+  font-weight: bold;
+}
+
+.ocean-text h3 {
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 52px;
+  text-align: left;
+}
+
+.ocean-text h4 {
+  font-size: 18px;
+  line-height: 22px;
+}
