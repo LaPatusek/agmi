@@ -101,15 +101,11 @@ const Services = () => {
               </li>
             </ol>
           </div>
-          <div>
-            <img src={oceanImg} alt='' />
-          </div>
+          <img src={oceanImg} alt='' />
         </div>
 
         <div className={styles.ocean}>
-          <div>
-            <img src={oceanImg} alt='' />
-          </div>
+          <img src={oceanImg} alt='' />
           <div className={styles['ocean-text']}>
             <h3>TRANSPORT KONTENERÓW MORSKICH</h3>
             <h4>Opis usługi, Opis usługi, Opis usługi, Opis usługi</h4>

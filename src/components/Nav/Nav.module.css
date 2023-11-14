@@ -13,6 +13,10 @@
   width: fit-content;
 }
 
+.navbar-900 {
+  display: none;
+}
+
 .nav-link {
   position: relative;
   justify-self: center;
@@ -51,6 +55,27 @@
 
 @media screen and (max-width: 900px) {
   .nav {
+    padding: 1rem 1.5rem;
+    display: block;
+  }
+
+  .nav img {
+    width: 90%;
+    height: auto;
+  }
+
+  .navbar {
     display: none !important;
+  }
+
+  .navbar-900 {
+    display: block;
+  }
+
+  .ham-menu {
+    position: absolute;
+    right: 5%;
+    top: 4%;
+    cursor: pointer;
   }
 }

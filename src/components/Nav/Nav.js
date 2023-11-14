@@ -1,3 +1,4 @@
+import { HambergerMenu } from 'iconsax-react';
 import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.png';
@@ -34,6 +35,12 @@ const Nav = () => {
           >
             Kariera
           </Link>
+        </div>
+
+        <div className={styles['navbar-900']}>
+          <div className={styles['ham-menu']}>
+            <HambergerMenu color='#f1f1f1' size={'36'}/>
+          </div>
         </div>
       </div>
     </Fragment>

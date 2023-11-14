@@ -126,3 +126,45 @@
   font-size: 18px;
   line-height: 22px;
 }
+
+@media screen and (max-width: 900px) {
+  .services-wrap {
+    padding: 4rem 1rem;
+  }
+
+  .services-header h1 {
+    width: min-content;
+  }
+
+  .services-header h2 {
+    width: 75%;
+  }
+
+  .three-in-row {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 3rem;
+  }
+
+  .mid-truck {
+    transform: rotateY(180deg) !important;
+  }
+
+  .freeze,
+  .ocean {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .freeze img,
+  .ocean img {
+    width: 98%;
+    justify-self: center;
+  }
+
+  .freeze ol {
+    padding-bottom: 10px;
+  }
+
+  .ocean-text h3 {
+    padding-top: 10px;
+  }
+}

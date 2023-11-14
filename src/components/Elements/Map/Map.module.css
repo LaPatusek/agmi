@@ -6,21 +6,14 @@
 .google-map {
   width: 100%;
   height: 65vmin;
-  position: relative;
-}
-
-.text {
-  position: absolute;
-  left: -10px;
-  top: -26px;
-  display: flex;
-  align-items: center;
-  width: 180px;
-  color: #ea4335;
-  font-size: 14px;
 }
 
 @media screen and (max-width: 800px) {
+  .map {
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
   .map,
   .google-map {
     width: 100%;

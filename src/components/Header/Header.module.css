@@ -45,3 +45,18 @@
   );
   z-index: 3;
 }
+
+@media screen and (max-width: 900px) {
+  .header h1 {
+    width: min-content;
+    top: 20%;
+  }
+
+  .header img {
+    height: 75vh;
+  }
+
+  .header::before {
+    width: 60%;
+  }
+}

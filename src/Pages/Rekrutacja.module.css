@@ -178,3 +178,42 @@
 .buttons-wrap button:hover {
   filter: brightness(1.1);
 }
+
+@media screen and (max-width: 900px) {
+  .wymagania-wrap {
+    width: 85%;
+  }
+
+  .form-header h4 {
+    width: 80%;
+  }
+
+  .form-wrap form {
+    width: fit-content;
+    padding: 0 1.5rem;
+  }
+
+  .rows-wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .second-row {
+    justify-self: unset;
+    margin-left: unset;
+  }
+
+  .form-wrap input,
+  .form-wrap textarea {
+    width: 100%;
+  }
+
+  .buttons-wrap {
+    text-align: center;
+  }
+
+  .buttons-wrap button {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
