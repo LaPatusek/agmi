@@ -30,9 +30,21 @@
 }
 
 .container {
+  display: grid;
   justify-self: center;
   align-self: center;
   padding: 2rem 0.5rem;
+}
+
+.container img {
+  width: 40%;
+  margin: 0 auto;
+  transform: rotateY(180deg);
+  margin-bottom: 10px;
+}
+
+.mid-truck {
+  transform: translateX(-20%) rotateY(180deg) !important;
 }
 
 .container h3 {
@@ -62,6 +74,15 @@
 .ocean {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+}
+
+.freeze {
+  margin-bottom: 75px;
+}
+
+.freeze img {
+  transform: rotateY(180deg);
 }
 
 .freeze-text h3 {
@@ -70,6 +91,7 @@
   line-height: 52px;
   text-align: right;
   color: #333333;
+  padding-top: 45px;
 }
 
 .freeze-text h4 {
@@ -97,6 +119,7 @@
   font-weight: bold;
   line-height: 52px;
   text-align: left;
+  padding-top: 45px;
 }
 
 .ocean-text h4 {

@@ -42,6 +42,11 @@
   line-height: 26px;
 }
 
+.container p > a {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
 .map-button {
   cursor: pointer;
   width: fit-content;

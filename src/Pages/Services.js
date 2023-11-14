@@ -1,3 +1,7 @@
+import busIcon from '../assets/busicon.webp';
+import midTruck from '../assets/midTruck.webp';
+import Truck from '../assets/truck.webp';
+import oceanImg from '../assets/zdj3.jpg';
 import styles from './Services.module.css';
 
 const Services = () => {
@@ -16,6 +20,7 @@ const Services = () => {
       <div className={`${styles.services}`}>
         <div className={`${styles['three-in-row']} grid`}>
           <div className={styles.container}>
+            <img src={busIcon} alt='' />
             <h3>BUS O ŁADOWNOŚCI 1.5 - 3.5 TONY</h3>
             <h4>Opis usługi, Opis usługi, Opis usługi, Opis usługi</h4>
             <ol>
@@ -37,6 +42,7 @@ const Services = () => {
           </div>
 
           <div className={styles.container}>
+            <img src={midTruck} alt='' className={styles['mid-truck']} />
             <h3>STANDARDOWYMI PLANDEKAMI O ŁADOWNOŚCI DO 24 TON</h3>
             <h4>Opis usługi, Opis usługi, Opis usługi, Opis usługi</h4>
             <ol>
@@ -56,6 +62,7 @@ const Services = () => {
           </div>
 
           <div className={styles.container}>
+            <img src={Truck} alt='' />
             <h3>POJAZDAMI TYPU ZESTAW O DŁUGOŚCI 15,4M.</h3>
             <h4>Opis usługi, Opis usługi, Opis usługi, Opis usługi</h4>
             <ol>
@@ -94,11 +101,15 @@ const Services = () => {
               </li>
             </ol>
           </div>
-          <div>IMG</div>
+          <div>
+            <img src={oceanImg} alt='' />
+          </div>
         </div>
 
         <div className={styles.ocean}>
-          <div>IMG</div>
+          <div>
+            <img src={oceanImg} alt='' />
+          </div>
           <div className={styles['ocean-text']}>
             <h3>TRANSPORT KONTENERÓW MORSKICH</h3>
             <h4>Opis usługi, Opis usługi, Opis usługi, Opis usługi</h4>

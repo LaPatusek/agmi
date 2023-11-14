@@ -143,7 +143,8 @@ const Kontakt = () => {
             Rzeszów
           </p>
           <p>
-            lub w formie elektronicznej na adres: biuro@agmitransport.pl
+            lub w formie elektronicznej na adres:{' '}
+            <a href='mailto:'> biuro@agmitransport.pl </a>
             <br />
             lub wysłać za pomocą poniższego formularza:
           </p>

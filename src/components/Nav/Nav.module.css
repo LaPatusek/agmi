@@ -3,14 +3,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
-}
-
-.black {
-  background-color: #1a1a1a;
-}
-
-.black-link {
-  color: #f1f1f1 !important;
+  background-color: #1d1d1d;
 }
 
 .navbar {
@@ -25,24 +18,26 @@
   justify-self: center;
   padding: 10px 30px;
   font-size: 26px;
-  color: #1a1a1a;
+  color: #f1f1f1;
   letter-spacing: 0.5px;
   font-weight: bold;
   transition: all 0.4s ease;
 }
 
 .mid-link::before,
-.mid-link::after {
+.mid-link::after,
+.last-link::before {
   content: '';
   position: absolute;
   top: 0;
   height: 100%;
   width: 3px;
-  background-color: #adadad;
+  background-color: #cecece;
   border-radius: 3px;
 }
 
-.mid-link::before {
+.mid-link::before,
+.last-link::before {
   left: 0;
 }
 
