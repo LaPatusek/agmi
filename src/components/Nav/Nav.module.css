@@ -78,4 +78,54 @@
     top: 4%;
     cursor: pointer;
   }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 8;
+  }
+
+  .navbar-menu-900 {
+    position: absolute;
+    top: 0%;
+    width: 0%;
+    height: 100%;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+    transition: all 0.25s ease-out;
+  }
+
+  .menu-item-900 {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 17%;
+    width: 100%;
+    background-color: #f1f1f1;
+    z-index: 12;
+    opacity: 0;
+  }
+
+  .menu-item-900 span {
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    font-size: 1.5rem;
+  }
+
+  .active-menu-900 {
+    width: 65%;
+  }
+
+  .visible-menu-item-900 {
+    opacity: 1;
+  }
 }

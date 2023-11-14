@@ -94,6 +94,7 @@ const Footer = () => {
           <div className={`${styles['box-content']} grid`}>
             <Link to='/'>Strona Główna</Link>
             <Link to='/oferta'>Oferta</Link>
+            <Link to='/rekrutacja'>Kariera</Link>
             <Link to='/galeria'>Galeria</Link>
             <Link to='/kontakt'>Kontakt</Link>
           </div>
