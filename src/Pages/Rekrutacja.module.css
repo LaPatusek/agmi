@@ -27,7 +27,6 @@
 .wymagania-wrap h3 {
   color: #9c9c9c;
   font-size: 28px;
-  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   text-align: center;
@@ -35,7 +34,6 @@
 }
 
 .wymagania-wrap h4 {
-  font-weight: bold;
   font-size: 22px;
   color: #333333;
   margin-bottom: 7.5px;
@@ -60,10 +58,7 @@
 }
 
 .form-header h3 {
-  text-align: center;
-  font-weight: bold;
   font-size: 26px;
-  user-select: none;
   margin-bottom: 1rem;
 }
 
@@ -72,11 +67,9 @@
   margin: 10px auto;
   font-size: 18px;
   line-height: 20px;
-  text-align: center;
 }
 
 .form-header p {
-  text-align: center;
   font-weight: bold;
   line-height: 18px;
   margin: 5px 0;
@@ -97,7 +90,6 @@
 .form-wrap label {
   margin-bottom: 5px;
   font-size: 16px;
-  font-weight: bold;
   color: #1a1a1a;
   user-select: none;
 }
@@ -145,7 +137,6 @@
 
 .required-cv {
   margin-top: 15px;
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
 }
@@ -157,8 +148,7 @@
 
 .buttons-wrap {
   width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .buttons-wrap button {
@@ -207,13 +197,7 @@
     width: 100%;
   }
 
-  .buttons-wrap {
-    text-align: center;
-  }
-
   .buttons-wrap button {
     width: 85%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }

@@ -129,7 +129,7 @@ const Kontakt = () => {
       </div>
 
       <div className={`${styles['form-wrap']} grid`}>
-        <div className={styles['form-header']}>
+        <div className={`${styles['form-header']} center`}>
           <h3>Aplikuj już dziś</h3>
           <h4>
             Aplikacje zawierające CV z adnotacją „Wyrażam zgodę na przetwarzanie
@@ -256,14 +256,14 @@ const Kontakt = () => {
               onBlur={messageBlurHandler}
             />
           </div>
-          <div className={styles['required-cv']}>
+          <div className={`${styles['required-cv']} grid`}>
             <div className={styles['cv-input']}>
               <label htmlFor='CV'>Twoje CV*</label> <br />
               <input type='file' id='CV' />
             </div>
             <p className={styles.required}>*Wymagane</p>
           </div>
-          <div className={styles['buttons-wrap']}>
+          <div className={`${styles['buttons-wrap']} center`}>
             <button onClick={resetHandler}>Reset</button>
             <button type='submit' value={'Send'}>
               Wyślij

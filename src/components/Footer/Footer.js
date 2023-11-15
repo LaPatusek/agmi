@@ -105,7 +105,7 @@ const Footer = () => {
 
       <div className={`${styles.copyright} flex`}>
         <p>
-          <Copyright size='16px' /> 2014 AGMI Transport
+          <Copyright size='16px' /> 2023 AGMI Transport
         </p>
 
         <Link to='/polityka-prywatnosci'>Polityka Prywatności</Link>

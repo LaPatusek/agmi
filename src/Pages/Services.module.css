@@ -85,21 +85,29 @@
   transform: rotateY(180deg);
 }
 
-.freeze-text h3 {
+.freeze-text h3,
+.ocean-text h3 {
   font-size: 44px;
-  font-weight: bold;
   line-height: 52px;
-  text-align: right;
   color: #333333;
   padding-top: 45px;
 }
 
+.freeze-text h3 {
+  text-align: right;
+}
+
+.ocean-text h3 {
+  text-align: left;
+}
+
+.ocean-text h4,
 .freeze-text h4 {
   font-size: 18px;
   line-height: 22px;
-  margin-left: 30px;
 }
 
+.freeze-text h4,
 .freeze-text ol {
   margin-left: 30px;
 }
@@ -107,24 +115,13 @@
 .freeze-text ol > li,
 .ocean-text ol > li {
   font-size: 17px;
+  font-family: 'monsterrat-light';
 }
 
 .freeze-text li > span,
 .ocean-text li > span {
   font-weight: bold;
-}
-
-.ocean-text h3 {
-  font-size: 44px;
-  font-weight: bold;
-  line-height: 52px;
-  text-align: left;
-  padding-top: 45px;
-}
-
-.ocean-text h4 {
-  font-size: 18px;
-  line-height: 22px;
+  font-family: 'monsterrat-light';
 }
 
 @media screen and (max-width: 900px) {

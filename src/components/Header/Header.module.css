@@ -8,13 +8,14 @@
 .header h1 {
   position: absolute;
   top: 30%;
-  left: 4%;
+  left: 3%;
   z-index: 5;
   color: #f1f1f1;
   font-size: 48px;
   line-height: 52px;
   user-select: none;
   text-transform: uppercase;
+  letter-spacing: 0.2px;
 }
 
 .header span {
