@@ -2,10 +2,6 @@
   padding-top: 4rem;
 }
 
-.kontakt-header {
-  text-align: center;
-}
-
 .kontakt-header h1 {
   font-size: 32px;
   font-weight: bold;
@@ -52,6 +48,7 @@
 
 .wymagania-wrap ol > li {
   font-size: 18px;
+  font-family: 'monsterrat-medium';
   line-height: 20px;
   letter-spacing: 0.6px;
   margin-left: 20px;
@@ -88,6 +85,7 @@
 .form-header p > a {
   color: #000;
   text-decoration: underline;
+  font-family: "monsterrat-regular";
 }
 
 .form-wrap form {
@@ -141,6 +139,8 @@
   width: fit-content;
   justify-self: right;
   font-size: 14px;
+  font-family: "monsterrat-light";
+  font-weight: bold;
 }
 
 .required-cv {
@@ -165,7 +165,7 @@
   cursor: pointer;
   background-color: var(--main-yellow);
   color: #1a1a1a;
-  font-weight: bold;
+  font-family: "monsterrat-bold";
   letter-spacing: 0.5px;
   padding: 18px 80px;
   margin: 20px 10px 0 10px;

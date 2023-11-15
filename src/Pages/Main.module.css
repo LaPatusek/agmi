@@ -26,10 +26,6 @@
   object-position: 0 10%;
 }
 
-.container {
-  position: relative;
-}
-
 .container img {
   width: 100%;
   height: auto;
@@ -64,7 +60,8 @@
   background-color: var(--main-yellow);
   padding: 8px 13px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
+  font-family: 'monsterrat-bold';
   color: #000;
   border: 2px solid transparent;
   transition: all 0.6s;
@@ -109,7 +106,6 @@
 }
 
 .zaleta {
-  text-align: center;
   padding: 0 0.5rem;
 }
 
@@ -130,19 +126,16 @@
   font-size: 18px;
 }
 
-.buttons-wrap {
-  text-align: center;
-}
-
 .buttons-wrap a {
   background-color: var(--main-yellow);
   padding: 25px 40px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
   color: #000;
   margin: 0 15px;
   transition: all 0.6s;
+  font-family: "monsterrat-extrabold";
 }
 
 .buttons-wrap a:hover {
@@ -188,14 +181,12 @@
     width: 85%;
   }
 
-  .zaleta {
+  .zaleta,
+  .buttons-wrap a {
     margin-bottom: 25px;
   }
 
   .buttons-wrap {
     display: grid;
-  }
-  .buttons-wrap a {
-    margin-bottom: 25px;
   }
 }

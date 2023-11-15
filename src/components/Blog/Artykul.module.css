@@ -2,10 +2,6 @@
   padding: 2rem 6rem;
 }
 
-.article {
-  display: grid;
-}
-
 .article span {
   text-align: right;
   font-size: 18px;

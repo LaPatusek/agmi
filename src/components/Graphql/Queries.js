@@ -13,15 +13,19 @@ description
 
 export const QUERY_POSTS = gql`
     {
-        posts(){
+        posts()
+        {
             ${post}
         }
     }
 `;
 
 export const QUERY_ONE_POSTS = gql`
-    query getOnePost($slug: String!) {
-        posts(where: {slug: $slug}) {
-        ${post}}
+    query getOnePost($slug: String!) 
+    {
+        posts(where: {slug: $slug}) 
+        {
+        ${post}
+    }
     }
 `;

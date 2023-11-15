@@ -3,7 +3,7 @@ import styles from './Header.module.css';
 
 const Header = () => {
   return (
-    <div className={styles.header}>
+    <div className={`${styles.header} relative`}>
       <h1>
         Z nami <span>jesteś</span> <br /> zawsze <span> na czas </span>
       </h1>

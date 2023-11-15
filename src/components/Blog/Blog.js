@@ -7,10 +7,10 @@ const Blog = ({ posts }) => {
   return (
     <div className={styles['blog-wrap']}>
       <h3>Aktualności</h3>
-      <div className={styles.blog}>
+      <div className={`${styles.blog} grid`}>
         {posts?.map((post) => (
           <Link key={post.id} to={`/article/${post.slug}`}>
-            <div className={styles['post-container']}>
+            <div className={`${styles['post-container']} grid`}>
               <img src={tempImg} alt={post.title}/>
               <span>
                 <Clock size={'16'}/>

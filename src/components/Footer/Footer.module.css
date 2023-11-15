@@ -11,7 +11,6 @@
 }
 
 .socials {
-  display: flex;
   justify-content: right;
 }
 
@@ -20,7 +19,6 @@
   font-size: 18px;
   margin-right: 3px;
   user-select: none;
-  font-weight: bold;
 }
 
 .socials svg {
@@ -56,7 +54,6 @@
   width: fit-content;
   position: relative;
   user-select: none;
-  font-weight: bold;
   font-size: 20px;
   margin-bottom: 30px;
 }
@@ -72,9 +69,7 @@
 }
 
 .container {
-  display: flex;
-  position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .container svg {
@@ -90,13 +85,13 @@
 
 .footer-box p,
 .footer-box a {
-  position: relative;
   margin-bottom: 8px;
   font-size: 17px;
   line-height: 18px;
   color: #1a1a1a;
   transition: all 0.4s;
   width: fit-content;
+  font-family: 'monsterrat-regular';
 }
 
 .footer-box a:hover {
@@ -106,7 +101,6 @@
 .copyright {
   font-size: 16px;
   letter-spacing: 0.5px;
-  display: flex;
   justify-content: space-between;
 }
 
@@ -124,9 +118,9 @@
 
 .copyright a {
   color: #000;
-  transition: all 0.4s;
   border-bottom: 1px solid #000;
-  font-weight: bold;
+  transition: all 0.4s;
+  font-family: 'monsterrat-regular';
 }
 
 .copyright a:hover {

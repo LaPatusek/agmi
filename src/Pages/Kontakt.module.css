@@ -2,13 +2,8 @@
   padding-top: 4rem;
 }
 
-.kontakt-header {
-  text-align: center;
-}
-
 .kontakt-header h1 {
   font-size: 32px;
-  font-weight: bold;
   text-transform: uppercase;
   user-select: none;
   margin-bottom: 7.5px;
@@ -29,10 +24,6 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
-.container {
-  text-align: center;
-}
-
 .container svg {
   margin-bottom: 5px;
 }
@@ -45,6 +36,7 @@
 .container p > a {
   color: #000;
   border-bottom: 1px solid #000;
+  font-family: 'monsterrat-regular';
 }
 
 .map-button {
@@ -52,6 +44,11 @@
   width: fit-content;
   margin: 10px auto 0 auto;
   color: #000;
+}
+
+.map-button span {
+  font-weight: bold;
+  font-family: 'monsterrat-light';
 }
 
 .map-button svg {
@@ -85,7 +82,6 @@
 .form-wrap label {
   margin-bottom: 5px;
   font-size: 16px;
-  font-weight: bold;
   color: #1a1a1a;
   user-select: none;
 }
@@ -99,7 +95,6 @@
   margin-bottom: 20px;
   font-size: 18px;
   height: 60px;
-  font-weight: bold;
 }
 
 .rows-wrap {
@@ -128,19 +123,20 @@
   width: fit-content;
   margin-left: auto;
   font-size: 14px;
+  font-family: 'monsterrat-light';
+  font-weight: bold;
 }
 
 .buttons-wrap {
   width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .buttons-wrap button {
   cursor: pointer;
   background-color: var(--main-yellow);
   color: #1a1a1a;
-  font-weight: bold;
+  font-family: 'monsterrat-bold';
   letter-spacing: 0.5px;
   padding: 18px 80px;
   margin: 20px 10px 0 10px;
@@ -155,17 +151,14 @@
 }
 
 @media screen and (max-width: 900px) {
-  .dane {
+  .dane,
+  .rows-wrap {
     grid-template-columns: repeat(1, 1fr);
   }
 
   .form-wrap form {
     width: fit-content;
     padding: 0 1.5rem;
-  }
-
-  .rows-wrap {
-    grid-template-columns: repeat(1, 1fr);
   }
 
   .second-row {
@@ -176,10 +169,6 @@
   .form-wrap input,
   .form-wrap textarea {
     width: 100%;
-  }
-
-  .buttons-wrap {
-    text-align: center;
   }
 
   .buttons-wrap button {

@@ -105,7 +105,7 @@ const Kontakt = () => {
 
   return (
     <div className={styles.kontakt}>
-      <div className={styles['kontakt-header']}>
+      <div className={`${styles['kontakt-header']} center`}>
         <h1>Skontaktuj się z nami</h1>
         <h2>
           On this page you can find our contact details and a simple form you{' '}
@@ -115,13 +115,13 @@ const Kontakt = () => {
       </div>
 
       <div className={`${styles.dane} grid`}>
-        <div className={styles.container}>
+        <div className={`${styles.container} center`}>
           <Call variant='Bold' size={iconSize} />
           <p>tel. 17 783 43 31</p>
           <p>fax. 17 783 43 11</p>
         </div>
 
-        <div className={styles.container}>
+        <div className={`${styles.container} center`}>
           <Location variant='Bold' size={iconSize} />
           <p>
             AGMI Transport <br /> ul hr. Wandy Tarnowskiej 1 <br /> 35-322
@@ -134,7 +134,7 @@ const Kontakt = () => {
           </Link>
         </div>
 
-        <div className={styles.container}>
+        <div className={`${styles.container} center`}>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width={iconSize}
@@ -263,7 +263,7 @@ const Kontakt = () => {
           </div>
           <p className={styles.required}>*Wymagane</p>
 
-          <div className={styles['buttons-wrap']}>
+          <div className={`${styles['buttons-wrap']} center`}>
             <button onClick={resetHandler}>Reset</button>
             <button type='submit' value={'Send'}>
               Wyślij

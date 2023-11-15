@@ -101,7 +101,7 @@ const Kontakt = () => {
 
   return (
     <div className={styles.kontakt}>
-      <div className={styles['kontakt-header']}>
+      <div className={`${styles['kontakt-header']} center`}>
         <h1>Dołącz do naszego zespołu</h1>
         <h2>
           On this page you can find our contact details and a simple form you

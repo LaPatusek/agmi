@@ -18,7 +18,7 @@ const Artykul = () => {
   return (
     <div className={styles['article-wrap']}>
       {posts.map((post) => (
-        <article key={post.slug} className={styles['article']}>
+        <article key={post.slug} className={`${styles['article']} grid`}>
           <span>
             <Clock size={'18'} />
             {new Date(post.createdAt).toLocaleDateString('pl-PL')}

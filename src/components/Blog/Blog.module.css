@@ -7,20 +7,17 @@
   margin-bottom: 2rem;
   font-size: 50px;
   text-align: center;
-  font-weight: bold;
   color: #333333;
   letter-spacing: 0.2px;
   user-select: none;
 }
 
 .blog {
-  display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 35px;
 }
 
 .post-container {
-  display: grid;
   width: 100%;
   border: 2px solid var(--main-yellow);
   background-color: #fff;
@@ -38,6 +35,8 @@
   font-size: 14px;
   color: #000;
   user-select: none;
+  font-weight: bold;
+  font-family: 'monsterrat-light';
 }
 
 .post-container span > svg {
@@ -48,7 +47,6 @@
 .post-container h4 {
   margin: 15px 0 10px 0;
   text-align: center;
-  font-weight: bold;
   font-size: 18px;
   letter-spacing: 0.5px;
   color: #333;
@@ -64,8 +62,7 @@
   width: 60%;
   margin: 15px auto 0 auto;
   padding: 5px 0;
-  font-size: 17px;
-  font-weight: bold;
+  font-family: 'monsterrat-extrabold';
   cursor: pointer;
   transition: all 0.4s;
 }

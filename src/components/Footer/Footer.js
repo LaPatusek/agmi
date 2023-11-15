@@ -5,7 +5,7 @@ import styles from './Footer.module.css';
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <div className={styles.socials}>
+      <div className={`${styles.socials} flex`}>
         <h2>Obserwuj nas na bieżąco</h2>
         <div>
           <a
@@ -51,7 +51,7 @@ const Footer = () => {
         <div className={styles['footer-box']}>
           <h3>Kontakt</h3>
           <div className={`${styles['box-content']} grid`}>
-            <div className={styles.container}>
+            <div className={`${styles.container} flex relative`}>
               <div className={styles['icon-container']}>
                 <Location variant='Bold' color='#1a1a1a' />
               </div>
@@ -61,7 +61,7 @@ const Footer = () => {
               </p>
             </div>
 
-            <div className={styles.container}>
+            <div className={`${styles.container} flex relative`}>
               <div className={styles['icon-container']}>
                 <Call variant='Bold' color='#1a1a1a' />
               </div>
@@ -70,7 +70,7 @@ const Footer = () => {
               </p>
             </div>
 
-            <div className={styles.container}>
+            <div className={`${styles.container} flex relative`}>
               <div className={styles['icon-container']}>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -103,7 +103,7 @@ const Footer = () => {
 
       <hr />
 
-      <div className={styles.copyright}>
+      <div className={`${styles.copyright} flex`}>
         <p>
           <Copyright size='16px' /> 2014 AGMI Transport
         </p>

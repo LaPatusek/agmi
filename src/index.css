@@ -18,10 +18,76 @@ code {
     monospace;
 }
 
+@font-face {
+  font-family: 'monsterrat-light';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./assets/Montserrat-Light.ttf) format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'monsterrat-medium';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./assets/Montserrat-Medium.ttf) format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'monsterrat-regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./assets/Montserrat-Regular.ttf) format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'monsterrat-bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./assets/Montserrat-SemiBold.ttf) format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'monsterrat-extraBold';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./assets/Montserrat-ExtraBold.ttf) format('truetype');
+  font-display: swap;
+}
+
+h1,
+label {
+  font-family: 'monsterrat-extraBold';
+}
+
+h2,
+h3,
+h4 {
+  font-family: 'monsterrat-bold';
+}
+
+p,
+input,
+textarea {
+  font-family: 'monsterrat-regular';
+}
+
+
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
+}
+
+.relative {
+  position: relative;
+}
+
+.center {
+  text-align: center;
 }

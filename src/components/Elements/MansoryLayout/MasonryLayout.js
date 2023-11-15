@@ -12,7 +12,7 @@ const MasonryLayout = () => {
 
   const renderedImages = images.images.map((image) => {
     return (
-      <div id={image.id} key={image.id + image.kierowca} className={styles.image}>
+      <div id={image.id} key={image.id + image.kierowca} className={`${styles.image} relative`}>
         <img src={image.src} width='100%' height={'100%'} alt={image.id} />
         <div className={styles['image-text']}>
           <div className={styles['text-wrap']}>
