@@ -5,6 +5,7 @@ import Kontakt from './Pages/Kontakt';
 import Main from './Pages/Main';
 import Rekrutacja from './Pages/Rekrutacja';
 import Services from './Pages/Services';
+import Artykul from './components/Blog/Artykul';
 import Footer from './components/Footer/Footer';
 import Nav from './components/Nav/Nav';
 
@@ -38,6 +39,7 @@ function App() {
           <Route path='/kontakt' element={<Kontakt />} />
           <Route path='/oferta' element={<Services />} />
           <Route path='/rekrutacja' element={<Rekrutacja />} />
+          <Route path='/article/:slug' element={<Artykul />} />
           <Route path='*' element={<Main />} />
         </Routes>
       </main>

@@ -1,11 +1,19 @@
 import { ArrowRight2, TruckFast } from 'iconsax-react';
-import { Fragment } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import temporaryImage from '../assets/bus.jpeg';
+import Blog from '../components/Blog/Blog';
+import { QUERY_POSTS, graphcms } from '../components/Graphql/Queries';
 import Header from '../components/Header/Header';
 import styles from './Main.module.css';
 
 const Main = () => {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    graphcms.request(QUERY_POSTS).then((res) => setPosts(res.posts));
+  }, []);
+
   return (
     <Fragment>
       <Header />
@@ -78,7 +86,9 @@ const Main = () => {
         <div className={`${styles['zalety-wrap']} grid`}>
           <div className={styles.zaleta}>
             <TruckFast variant='Bold' color='#333333' size={'64'} />
-            <h4>Szybkość <br/> działania</h4>
+            <h4>
+              Szybkość <br /> działania
+            </h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div className={styles.zaleta}>
@@ -103,6 +113,8 @@ const Main = () => {
           <Link to='/kontakt'>Skontakuj się z nami</Link>
         </div>
       </div>
+
+      <Blog posts={posts}/>
     </Fragment>
   );
 };
