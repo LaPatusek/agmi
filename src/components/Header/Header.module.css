@@ -11,7 +11,6 @@
   left: 4%;
   z-index: 5;
   color: #f1f1f1;
-  font-weight: bold;
   font-size: 48px;
   line-height: 52px;
   user-select: none;
@@ -20,6 +19,7 @@
 
 .header span {
   color: var(--main-yellow);
+  font-family: 'monsterrat-extraBold';
 }
 
 .header::before {
