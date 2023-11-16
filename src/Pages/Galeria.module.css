@@ -4,7 +4,7 @@
 
 .galeria-text {
   padding-bottom: 5rem;
-  color: #333333;
+  color: var(--text-gray);
 }
 
 .galeria-text h1 {

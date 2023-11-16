@@ -1,5 +1,5 @@
 import { HambergerMenu } from 'iconsax-react';
-import { Fragment, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import styles from './Nav.module.css';
@@ -47,91 +47,89 @@ const Nav = () => {
   }, [menuState]);
 
   return (
-    <Fragment>
-      <div className={`${styles.nav} grid`}>
-        <div className={styles.logo}>
-          <Link to='/'>
-            <img src={logo} alt='' height={'150px'} width={'402.5px'} />
-          </Link>
-        </div>
+    <div className={`${styles.nav} grid`}>
+      <div className={styles.logo}>
+        <Link to='/'>
+          <img src={logo} alt='' height={'150px'} width={'402.5px'} />
+        </Link>
+      </div>
 
-        <div className={`${styles.navbar} grid`}>
-          <Link to='/oferta' className={styles['nav-link']}>
-            Oferta
-          </Link>
-          <Link
-            to='/galeria'
-            className={`${styles['nav-link']} ${styles['mid-link']}  
+      <div className={`${styles.navbar} grid`}>
+        <Link to='/oferta' className={styles['nav-link']}>
+          Oferta
+        </Link>
+        <Link
+          to='/galeria'
+          className={`${styles['nav-link']} ${styles['mid-link']} relative 
             }`}
-          >
-            Galeria
-          </Link>
-          <Link to='/kontakt' className={styles['nav-link']}>
-            Kontakt
-          </Link>
+        >
+          Galeria
+        </Link>
+        <Link to='/kontakt' className={styles['nav-link']}>
+          Kontakt
+        </Link>
 
-          <Link
-            to='rekrutacja'
-            className={`${styles['nav-link']} ${styles['last-link']}`}
-          >
-            Kariera
-          </Link>
+        <Link
+          to='rekrutacja'
+          className={`${styles['nav-link']} ${styles['last-link']} relative`}
+        >
+          Kariera
+        </Link>
+      </div>
+
+      <div className={styles['navbar-900']}>
+        <div className={styles['ham-menu']}>
+          <HambergerMenu color='#f1f1f1' size={'36'} onClick={menuHandler} />
         </div>
+        {menuState && (
+          <div className={styles.overlay} onClick={menuHandler}>
+            <div className={`${styles['navbar-menu-900']} center`} ref={menuRef}>
+              <Link to='/' className={styles['menu-item-900']} ref={firstRef}>
+                <span>
+                  Strona <br /> główna
+                </span>
+              </Link>
 
-        <div className={styles['navbar-900']}>
-          <div className={styles['ham-menu']}>
-            <HambergerMenu color='#f1f1f1' size={'36'} onClick={menuHandler} />
-          </div>
-          {menuState && (
-            <div className={styles.overlay} onClick={menuHandler}>
-              <div className={`${styles['navbar-menu-900']}`} ref={menuRef}>
-                <Link to='/' className={styles['menu-item-900']} ref={firstRef}>
-                  <span>
-                    Strona <br /> główna
-                  </span>
-                </Link>
+              <Link
+                to='/oferta'
+                className={styles['menu-item-900']}
+                ref={secondRef}
+              >
+                <span>Oferta</span>
+              </Link>
 
-                <Link
-                  to='/oferta'
-                  className={styles['menu-item-900']}
-                  ref={secondRef}
-                >
-                  <span>Oferta</span>
-                </Link>
+              <Link
+                to='/galeria'
+                className={styles['menu-item-900']}
+                ref={thirdRef}
+              >
+                <span>Galeria</span>
+              </Link>
 
-                <Link
-                  to='/galeria'
-                  className={styles['menu-item-900']}
-                  ref={thirdRef}
-                >
-                  <span>Galeria</span>
-                </Link>
+              <Link
+                to='/kontakt'
+                className={styles['menu-item-900']}
+                ref={forthRef}
+              >
+                <span>Kontakt</span>
+              </Link>
 
-                <Link
-                  to='/kontakt'
-                  className={styles['menu-item-900']}
-                  ref={forthRef}
-                >
-                  <span>Kontakt</span>
-                </Link>
+              <Link
+                to='/rekrutacja'
+                className={styles['menu-item-900']}
+                ref={sixthRef}
+              >
+                <span>Kariera</span>
+              </Link>
 
-                <Link
-                  to='/rekrutacja'
-                  className={styles['menu-item-900']}
-                  ref={sixthRef}
-                >
-                  <span>Kariera</span>
-                </Link>
-
-                <div className={styles['menu-item-900']} ref={fifthRef}>
-                  <span> Zamknij </span>
-                </div>
+              <div className={styles['menu-item-900']} ref={fifthRef}>
+                <span>Zamknij</span>
               </div>
             </div>
-          )}
-        </div>
+          </div>
+        )}
       </div>
-    </Fragment>
+    </div>
   );
 };
 

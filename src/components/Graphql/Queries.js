@@ -8,7 +8,8 @@ title,
 slug,
 content { html },
 createdAt,
-description
+description,
+photo { url }
 `;
 
 export const QUERY_POSTS = gql`

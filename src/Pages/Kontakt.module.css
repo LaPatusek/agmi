@@ -8,13 +8,13 @@
   user-select: none;
   margin-bottom: 7.5px;
   letter-spacing: 0.5px;
-  color: #333333;
+  color: var(--text-gray);
 }
 
 .kontakt-header h2 {
   font-size: 15px;
   letter-spacing: 0.2px;
-  color: #333333;
+  color: var(--text-gray);
 }
 
 .dane {
@@ -54,7 +54,7 @@
 .map-button svg {
   justify-self: center;
   margin-top: 5px;
-  transition: all 0.6s;
+  transition: all 600ms;
 }
 
 .map-button:hover svg {
@@ -94,6 +94,7 @@
   padding: 8px 20px;
   margin-bottom: 20px;
   font-size: 18px;
+  font-weight: bold;
   height: 60px;
 }
 
@@ -103,7 +104,6 @@
 
 .second-row {
   justify-self: right;
-  margin-left: auto;
 }
 
 .second-row input,
@@ -128,7 +128,6 @@
 }
 
 .buttons-wrap {
-  width: fit-content;
   margin: 0 auto;
 }
 
@@ -143,7 +142,7 @@
   font-size: 22px;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-  transition: all 0.4s;
+  transition: all 400ms;
 }
 
 .buttons-wrap button:hover {
@@ -163,7 +162,6 @@
 
   .second-row {
     justify-self: unset;
-    margin-left: unset;
   }
 
   .form-wrap input,

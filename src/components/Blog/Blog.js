@@ -1,6 +1,5 @@
 import { Clock } from 'iconsax-react';
 import { Link } from 'react-router-dom';
-import tempImg from '../../assets/zdj3.jpg';
 import styles from './Blog.module.css';
 
 const Blog = ({ posts }) => {
@@ -11,7 +10,7 @@ const Blog = ({ posts }) => {
         {posts?.map((post) => (
           <Link key={post.id} to={`/article/${post.slug}`}>
             <div className={`${styles['post-container']} grid`}>
-              <img src={tempImg} alt={post.title}/>
+              <img src={post.photo.url} alt={post.title}/>
               <span>
                 <Clock size={'16'}/>
                 {new Date(post.createdAt).toLocaleDateString('pl-PL')}

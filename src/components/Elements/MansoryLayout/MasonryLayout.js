@@ -12,7 +12,11 @@ const MasonryLayout = () => {
 
   const renderedImages = images.images.map((image) => {
     return (
-      <div id={image.id} key={image.id + image.kierowca} className={`${styles.image} relative`}>
+      <div
+        id={image.id}
+        key={image.id + image.kierowca}
+        className={`${styles.image} relative`}
+      >
         <img src={image.src} width='100%' height={'100%'} alt={image.id} />
         <div className={styles['image-text']}>
           <div className={styles['text-wrap']}>
@@ -28,7 +32,7 @@ const MasonryLayout = () => {
     <div className={`${styles.gallery} grid`}>
       <Masonry
         breakpointCols={breakpointColumnsObj}
-        className={styles['my-masonry-grid']}
+        className={`${styles['my-masonry-grid']} flex`}
         columnClassName={styles['my-masonry-grid_column']}
       >
         {renderedImages}

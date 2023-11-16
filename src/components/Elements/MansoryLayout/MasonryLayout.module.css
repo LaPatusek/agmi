@@ -1,6 +1,5 @@
 .my-masonry-grid {
   justify-self: center;
-  display: flex;
   margin-left: -10px;
   width: 80%;
 }
@@ -52,7 +51,7 @@
 .text-wrap h3 {
   color: #f1f1f1;
   font-size: 18px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 @media screen and (max-width: 900px) {

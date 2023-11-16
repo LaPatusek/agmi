@@ -4,18 +4,17 @@
 
 .kontakt-header h1 {
   font-size: 32px;
-  font-weight: bold;
   text-transform: uppercase;
   user-select: none;
   margin-bottom: 7.5px;
   letter-spacing: 0.5px;
-  color: #333333;
+  color: var(--text-gray);
 }
 
 .kontakt-header h2 {
   font-size: 15px;
   letter-spacing: 0.2px;
-  color: #333333;
+  color: var(--text-gray);
   margin-bottom: 4rem;
 }
 
@@ -35,7 +34,7 @@
 
 .wymagania-wrap h4 {
   font-size: 22px;
-  color: #333333;
+  color: var(--text-gray);
   margin-bottom: 7.5px;
 }
 
@@ -112,7 +111,6 @@
 
 .second-row {
   justify-self: right;
-  margin-left: auto;
 }
 
 .second-row input,
@@ -189,7 +187,6 @@
 
   .second-row {
     justify-self: unset;
-    margin-left: unset;
   }
 
   .form-wrap input,

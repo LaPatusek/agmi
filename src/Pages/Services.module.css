@@ -8,11 +8,10 @@
 
 .services-header h1 {
   font-size: 54px;
-  font-weight: bold;
   text-transform: uppercase;
   line-height: 52px;
   user-select: none;
-  color: #333333;
+  color: var(--text-gray);
   margin-bottom: 30px;
 }
 
@@ -30,7 +29,6 @@
 }
 
 .container {
-  display: grid;
   justify-self: center;
   align-self: center;
   padding: 2rem 0.5rem;
@@ -49,11 +47,10 @@
 
 .container h3 {
   text-transform: uppercase;
-  font-weight: bold;
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 10px;
-  color: #333333;
+  color: var(--text-gray);
 }
 
 .container h4 {
@@ -72,7 +69,6 @@
 
 .freeze,
 .ocean {
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 50px;
 }
@@ -89,7 +85,7 @@
 .ocean-text h3 {
   font-size: 44px;
   line-height: 52px;
-  color: #333333;
+  color: var(--text-gray);
   padding-top: 45px;
 }
 

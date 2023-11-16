@@ -1,7 +1,6 @@
 import { Clock } from 'iconsax-react';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import tempImg from '../../assets/zdj3.jpg';
 import { QUERY_ONE_POSTS, graphcms } from '../Graphql/Queries';
 import styles from './Artykul.module.css';
 
@@ -25,7 +24,7 @@ const Artykul = () => {
           </span>
           <h2>{post.title}</h2>
           <div className={styles['image-wrap']}>
-            <img src={tempImg} alt='' />
+            <img src={post.photo.url} alt={post.title} />
           </div>
           <p className={styles.description}>{post.description}</p>
           <div

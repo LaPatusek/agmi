@@ -19,7 +19,7 @@ const Services = () => {
 
       <div className={`${styles.services}`}>
         <div className={`${styles['three-in-row']} grid`}>
-          <div className={styles.container}>
+          <div className={`${styles.container} grid`}>
             <img src={busIcon} alt='' />
             <h3>BUS O ŁADOWNOŚCI 1.5 - 3.5 TONY</h3>
             <h4>Opis usługi, Opis usługi, Opis usługi, Opis usługi</h4>
@@ -41,7 +41,7 @@ const Services = () => {
             </ol>
           </div>
 
-          <div className={styles.container}>
+          <div className={`${styles.container} grid`}>
             <img src={midTruck} alt='' className={styles['mid-truck']} />
             <h3>STANDARDOWYMI PLANDEKAMI O ŁADOWNOŚCI DO 24 TON</h3>
             <h4>Opis usługi, Opis usługi, Opis usługi, Opis usługi</h4>
@@ -61,7 +61,7 @@ const Services = () => {
             </ol>
           </div>
 
-          <div className={styles.container}>
+          <div className={`${styles.container} grid`}>
             <img src={Truck} alt='' />
             <h3>POJAZDAMI TYPU ZESTAW O DŁUGOŚCI 15,4M.</h3>
             <h4>Opis usługi, Opis usługi, Opis usługi, Opis usługi</h4>
@@ -82,7 +82,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className={styles['freeze']}>
+        <div className={`${styles['freeze']} grid`}>
           <div className={styles['freeze-text']}>
             <h3>POJAZDAMI CHŁODNICZYMI ORAZ IZOTERMAMI</h3>
             <h4>Opis usługi, Opis usługi, Opis usługi, Opis usługi</h4>
@@ -104,7 +104,7 @@ const Services = () => {
           <img src={oceanImg} alt='' />
         </div>
 
-        <div className={styles.ocean}>
+        <div className={`${styles.ocean} grid`}>
           <img src={oceanImg} alt='' />
           <div className={styles['ocean-text']}>
             <h3>TRANSPORT KONTENERÓW MORSKICH</h3>
