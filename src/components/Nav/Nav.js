@@ -49,8 +49,8 @@ const Nav = () => {
   return (
     <div className={`${styles.nav} grid`}>
       <div className={styles.logo}>
-        <Link to='/'>
-          <img src={logo} alt='' height={'150px'} width={'402.5px'} />
+        <Link to='/' aria-label='Strona Główna'>
+          <img src={logo} alt='' height={'90px'} width={'250px'} />
         </Link>
       </div>
 
@@ -83,7 +83,10 @@ const Nav = () => {
         </div>
         {menuState && (
           <div className={styles.overlay} onClick={menuHandler}>
-            <div className={`${styles['navbar-menu-900']} center`} ref={menuRef}>
+            <div
+              className={`${styles['navbar-menu-900']} center`}
+              ref={menuRef}
+            >
               <Link to='/' className={styles['menu-item-900']} ref={firstRef}>
                 <span>
                   Strona <br /> główna

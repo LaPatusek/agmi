@@ -22,7 +22,7 @@ const Main = () => {
 
         <div className={`${styles['first-row']} grid`}>
           <div className={`${styles.container} relative`}>
-            <img src={temporaryImage} alt='' />
+            <img src={temporaryImage} alt='' width={'100%'} height={'auto'} />
             <div className={styles['container-text']}>
               <h3>Bus o ładowności 1.5 - 3.5 tony</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -32,7 +32,7 @@ const Main = () => {
             </div>
           </div>
           <div className={`${styles.container} relative`}>
-            <img src={temporaryImage} alt='' />
+            <img src={temporaryImage} alt='' width={'100%'} height={'auto'} />
             <div className={styles['container-text']}>
               <h3>Standardowymi plandekami o ładowności do 24 ton</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -42,7 +42,7 @@ const Main = () => {
             </div>
           </div>
           <div className={`${styles.container} relative`}>
-            <img src={temporaryImage} alt='' />
+            <img src={temporaryImage} alt='' width={'100%'} height={'auto'} />
             <div className={styles['container-text']}>
               <h3>Pojazdami typu zestaw o długości 15,4m.</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -54,7 +54,7 @@ const Main = () => {
         </div>
         <div className={`${styles['second-row']} grid`}>
           <div className={`${styles.container} relative`}>
-            <img src={temporaryImage} alt='' />
+            <img src={temporaryImage} alt='' width={'100%'} height={'auto'} />
             <div className={styles['container-text']}>
               <h3>Pojazdami chłodniczymi oraz izotermami</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -64,7 +64,7 @@ const Main = () => {
             </div>
           </div>
           <div className={`${styles.container} relative`}>
-            <img src={temporaryImage} alt='' />
+            <img src={temporaryImage} alt='' width={'100%'} height={'auto'} />
             <div className={styles['container-text']}>
               <h3>Transport kontenerów morskich</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -114,7 +114,7 @@ const Main = () => {
         </div>
       </div>
 
-      <Blog posts={posts}/>
+      <Blog posts={posts} />
     </Fragment>
   );
 };

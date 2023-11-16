@@ -10,9 +10,14 @@ const Blog = ({ posts }) => {
         {posts?.map((post) => (
           <Link key={post.id} to={`/article/${post.slug}`}>
             <div className={`${styles['post-container']} grid`}>
-              <img src={post.photo.url} alt={post.title}/>
+              <img
+                src={post.photo.url}
+                alt={post.title}
+                width={'100%'}
+                height={'auto'}
+              />
               <span>
-                <Clock size={'16'}/>
+                <Clock size={'16'} />
                 {new Date(post.createdAt).toLocaleDateString('pl-PL')}
               </span>
               <h4>{post.title}</h4>

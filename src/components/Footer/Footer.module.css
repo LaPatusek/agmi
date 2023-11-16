@@ -137,12 +137,22 @@
     justify-content: space-between;
   }
 
+  .socials svg {
+    margin: 0px 2px;
+    width: 26px;
+    height: 26px;
+  }
+
   .boxes-wrap {
     padding: 1rem 0 2rem 0;
   }
 
   .footer-box {
     margin-top: 1rem;
+  }
+  
+  .footer-box a {
+    margin-bottom: 10px;
   }
 
   .boxes-wrap {
