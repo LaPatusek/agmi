@@ -15,10 +15,13 @@
 .blog {
   grid-template-columns: repeat(4, 1fr);
   column-gap: 35px;
+  padding-bottom: 45px;
 }
 
 .post-container {
   width: 100%;
+  min-height: 290px;
+  height: fit-content;
   border: 2px solid var(--main-yellow);
   background-color: #fff;
   padding: 0.5rem 0.5rem 1rem 0.5rem;
@@ -64,11 +67,40 @@
   padding: 5px 0;
   font-family: 'monsterrat-extrabold';
   cursor: pointer;
-  transition: all 0.4s;
+  transition: all 400ms;
 }
 
 .post-container button:hover {
   background-color: #fff;
+}
+
+.show-more-button {
+  background-color: var(--main-yellow);
+  padding: 23px 40px;
+  border: 2px solid var(--main-yellow);
+  font-size: 20px;
+  font-family: 'monsterrat-extrabold';
+  color: #000;
+  text-transform: uppercase;
+  justify-self: center;
+  cursor: pointer;
+  transition: all 400ms;
+}
+
+.show-more-button:hover {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1400px) {
+  .blog {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .blog {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 900px) {
