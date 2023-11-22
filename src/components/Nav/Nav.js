@@ -48,12 +48,6 @@ const Nav = () => {
 
   return (
     <div className={`${styles.nav} grid`}>
-      <div className={styles.logo}>
-        <Link to='/' aria-label='Strona Główna'>
-          <img src={logo} alt='' height={'90px'} width={'250px'} />
-        </Link>
-      </div>
-
       <div className={`${styles.navbar} grid`}>
         <Link to='/oferta' className={styles['nav-link']}>
           Oferta
@@ -131,6 +125,11 @@ const Nav = () => {
             </div>
           </div>
         )}
+      </div>
+      <div className={styles.logo}>
+        <Link to='/' aria-label='Strona Główna'>
+          <img src={logo} alt='' height={'90px'} width={'250px'} />
+        </Link>
       </div>
     </div>
   );

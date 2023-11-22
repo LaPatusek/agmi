@@ -6,7 +6,7 @@
 
 .header h1 {
   position: absolute;
-  right: 3%;
+  right: 4rem;
   top: 5%;
   z-index: 5;
   color: var(--main-yellow);
