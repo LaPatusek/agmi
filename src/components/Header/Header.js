@@ -1,14 +1,19 @@
 import background from '../../assets/AdobeStock_193619134_Preview.jpeg';
+import logo from '../../assets/logov2.png';
 import styles from './Header.module.css';
 
 const Header = () => {
   return (
     <div className={`${styles.header} relative`}>
-      <h1>AGMI <br/> Transport</h1>
-      <h2>
+      <div className={styles.logo}>
+        <img src={logo} alt='' />
+      </div>
+      <h1>
         Z nami <span>jesteś</span> <br /> zawsze <span> na czas </span>
-      </h2>
-      <img src={background} alt='' />
+      </h1>
+      <div className={styles['background-image']}>
+        <img src={background} alt='' />
+      </div>
     </div>
   );
 };

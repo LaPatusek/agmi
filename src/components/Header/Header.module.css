@@ -1,22 +1,23 @@
-.header img {
+.background-image img {
   width: 100%;
   max-height: 75vh;
   object-fit: cover;
 }
 
-.header h1 {
+.logo {
   position: absolute;
   right: 4rem;
-  top: 5%;
-  z-index: 5;
-  color: var(--main-yellow);
-  text-align: center;
-  font-size: 44px;
-  user-select: none;
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  top: 3%;
+  z-index: 6;
 }
 
-.header h2 {
+.logo img {
+  height: 90px;
+  width: 250px;
+  object-fit: contain;
+}
+
+.header h1 {
   position: absolute;
   top: 30%;
   left: 3%;
@@ -55,18 +56,18 @@
 }
 
 @media screen and (max-width: 900px) {
-  .header h1 {
-    top: 2.5%;
+  .logo {
     right: 50%;
     transform: translateX(50%);
+    top: 2.5%;
   }
 
-  .header h2 {
+  .header h1 {
     width: min-content;
     top: 27%;
   }
 
-  .header img {
+  .background-image img {
     height: 75vh;
   }
 

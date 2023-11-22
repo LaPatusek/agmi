@@ -16,6 +16,10 @@
   justify-self: right;
 }
 
+.logo img {
+  object-fit: contain;
+}
+
 .navbar-900 {
   display: none;
 }
