@@ -6,6 +6,18 @@
 
 .header h1 {
   position: absolute;
+  right: 3%;
+  top: 5%;
+  z-index: 5;
+  color: var(--main-yellow);
+  text-align: center;
+  font-size: 44px;
+  user-select: none;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+.header h2 {
+  position: absolute;
   top: 30%;
   left: 3%;
   z-index: 5;
@@ -44,8 +56,14 @@
 
 @media screen and (max-width: 900px) {
   .header h1 {
+    top: 2.5%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .header h2 {
     width: min-content;
-    top: 20%;
+    top: 27%;
   }
 
   .header img {

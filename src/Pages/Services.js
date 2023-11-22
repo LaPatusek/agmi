@@ -21,7 +21,7 @@ const Services = () => {
         <div className={`${styles['three-in-row']} grid`}>
           <div className={`${styles.container} grid`}>
             <img src={busIcon} alt='' />
-            <h3>BUS O ŁADOWNOŚCI 1.5 - 3.5 TONY</h3>
+            <h3>POJAZDY O ŁADOWNOŚCI 1.5 - 7.5 TONY</h3>
             <h4>Opis usługi, Opis usługi, Opis usługi, Opis usługi</h4>
             <ol>
               <li>
@@ -34,9 +34,7 @@ const Services = () => {
                 <span>Ładowność:</span>
               </li>
               <li>
-                <span>
-                  <span>Dodatkowe informacje:</span>
-                </span>
+                <span>Dodatkowe informacje:</span>
               </li>
             </ol>
           </div>
@@ -63,7 +61,7 @@ const Services = () => {
 
           <div className={`${styles.container} grid`}>
             <img src={Truck} alt='' />
-            <h3>POJAZDAMI TYPU ZESTAW O DŁUGOŚCI 15,4M.</h3>
+            <h3>POJAZDAMI CHŁODNICZYMI ORAZ IZOTERMAMI</h3>
             <h4>Opis usługi, Opis usługi, Opis usługi, Opis usługi</h4>
             <ol>
               <li>
@@ -84,9 +82,15 @@ const Services = () => {
 
         <div className={`${styles['freeze']} grid`}>
           <div className={styles['freeze-text']}>
-            <h3>POJAZDAMI CHŁODNICZYMI ORAZ IZOTERMAMI</h3>
-            <h4>Opis usługi, Opis usługi, Opis usługi, Opis usługi</h4>
-            <ol>
+            <h3>SERWIS SAMOCHODÓW CIĘŻAROWYCH</h3>
+            <h4>
+              Opis usługi, Opis usługi, Opis usługi, Opis usługi, Opis usługi,
+              Opis usługi, Opis usługi, Opis usługi, Opis usługi, Opis usługi,
+              Opis usługi, Opis usługi, Opis usługi, Opis usługi, Opis usługi,
+              Opis usługi, Opis usługi, Opis usługi, Opis usługi, Opis usługi,
+              Opis usługi, Opis usługi, Opis usługi, Opis usługi, Opis usługi
+            </h4>
+            {/* <ol>
               <li>
                 <span>Zasięg: </span>
               </li>
@@ -99,12 +103,12 @@ const Services = () => {
               <li>
                 <span>Dodatkowe informacje:</span>
               </li>
-            </ol>
+            </ol> */}
           </div>
           <img src={oceanImg} alt='' />
         </div>
 
-        <div className={`${styles.ocean} grid`}>
+        {/* <div className={`${styles.ocean} grid`}>
           <img src={oceanImg} alt='' />
           <div className={styles['ocean-text']}>
             <h3>TRANSPORT KONTENERÓW MORSKICH</h3>
@@ -124,7 +128,7 @@ const Services = () => {
               </li>
             </ol>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -4,9 +4,10 @@ import styles from './Header.module.css';
 const Header = () => {
   return (
     <div className={`${styles.header} relative`}>
-      <h1>
+      <h1>AGMI <br/> Transport</h1>
+      <h2>
         Z nami <span>jesteś</span> <br /> zawsze <span> na czas </span>
-      </h1>
+      </h2>
       <img src={background} alt='' />
     </div>
   );

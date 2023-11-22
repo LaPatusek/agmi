@@ -105,7 +105,8 @@
 
 .freeze-text h4,
 .freeze-text ol {
-  margin-left: 30px;
+  width: 90%;
+  margin-left: auto;
 }
 
 .freeze-text ol > li,

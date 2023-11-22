@@ -118,7 +118,6 @@ const Kontakt = () => {
         <div className={`${styles.container} center`}>
           <Call variant='Bold' size={iconSize} />
           <p>tel. 17 783 43 31</p>
-          <p>fax. 17 783 43 11</p>
         </div>
 
         <div className={`${styles.container} center`}>

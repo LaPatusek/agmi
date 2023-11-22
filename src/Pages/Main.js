@@ -24,7 +24,7 @@ const Main = () => {
           <div className={`${styles.container} relative`}>
             <img src={temporaryImage} alt='' width={'100%'} height={'auto'} />
             <div className={styles['container-text']}>
-              <h3>Bus o ładowności 1.5 - 3.5 tony</h3>
+              <h3>Pojazdy o ładowności 1.5 - 7.5 tony</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <Link to='/oferta'>
                 Więcej informacji <ArrowRight2 size={'18'} />
@@ -44,7 +44,7 @@ const Main = () => {
           <div className={`${styles.container} relative`}>
             <img src={temporaryImage} alt='' width={'100%'} height={'auto'} />
             <div className={styles['container-text']}>
-              <h3>Pojazdami typu zestaw o długości 15,4m.</h3>
+              <h3>Pojazdami chłodniczymi oraz izotermami</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <Link to='/oferta'>
                 Więcej informacji <ArrowRight2 size={'18'} />
@@ -56,7 +56,7 @@ const Main = () => {
           <div className={`${styles.container} relative`}>
             <img src={temporaryImage} alt='' width={'100%'} height={'auto'} />
             <div className={styles['container-text']}>
-              <h3>Pojazdami chłodniczymi oraz izotermami</h3>
+              <h3>Serwis samochodów ciężarowych</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <Link to='/oferta'>
                 Więcej informacji <ArrowRight2 size={'18'} />
@@ -66,7 +66,7 @@ const Main = () => {
           <div className={`${styles.container} relative`}>
             <img src={temporaryImage} alt='' width={'100%'} height={'auto'} />
             <div className={styles['container-text']}>
-              <h3>Transport kontenerów morskich</h3>
+              <h3>Pusty box</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <Link to='/oferta'>
                 Więcej informacji <ArrowRight2 size={'18'} />
@@ -78,10 +78,20 @@ const Main = () => {
       <div className={styles['about-us']}>
         <h2>O nas</h2>
         <h3>
-          Jesteśmy dynamicznie rozwijającą się firmą działającą w branży usług
-          TSL (Transport - Spedycja - Logistyka). <br /> Dzięki wykwalifikowanej
-          kadrze pracowniczej jesteśmy rzetelnym i odpowiedzialnym partnerem na
-          rynku usług spedycyjnych i transportowych.
+          Firma AGMI Transport rozpoczęła działalność w sektorze usług
+          transportowych w roku 2002. <br />
+          Specjalizujemy się w usługach w zakresie przewozów krajowych i
+          międzynarodowych. To, co nas wyróżnia to konkurencyjne ceny przy
+          zachowaniu wysokiej jakości świadczonych usług oraz kompleksowa
+          obsługa klientów. Priorytetem naszego działania jest terminowość
+          dostaw. Przez lata obecności na rynku zdobyliśmy cenne doświadczenie i
+          wypracowaliśmy procedury zapewniające profesjonalną obsługę naszych
+          kontrahentów. Od wielu lat jesteśmy partnerem dla takich firm jak
+          JAS-FBG S.A oraz RABEN Logistics. <br />
+          Dzięki wykwalifikowanej kadrze pracowniczej jesteśmy rzetelnym i
+          odpowiedzialnym partnerem na rynku usług spedycyjnych i
+          transportowych. <br />
+          <span> Zapraszamy do współpracy!</span>
         </h3>
         <div className={`${styles['zalety-wrap']} grid`}>
           <div className={`${styles.zaleta} center`}>

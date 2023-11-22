@@ -66,7 +66,7 @@ const Footer = () => {
                 <Call variant='Bold' color='#1a1a1a' />
               </div>
               <p>
-                tel. 17 783 43 31 <br /> fax. 17 783 43 11
+                tel. 17 783 43 31
               </p>
             </div>
 
