@@ -1,5 +1,5 @@
 import background from '../../assets/AdobeStock_193619134_Preview.jpeg';
-import logo from '../../assets/logov2.png';
+import logo from '../../assets/logov3.png';
 import styles from './Header.module.css';
 
 const Header = () => {
