@@ -79,6 +79,8 @@
 
 .freeze img {
   transform: rotateY(180deg);
+  filter: brightness(0.75);
+  width: 100%;
 }
 
 .freeze-text h3,
@@ -121,6 +123,22 @@
   font-family: 'monsterrat-light';
 }
 
+@media screen and (max-width: 1200px) {
+  .freeze-text h3 {
+    text-align: center;
+  }
+
+  .freeze-text h4 {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .freeze,
+  .ocean {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 @media screen and (max-width: 900px) {
   .services-wrap {
     padding: 4rem 1rem;
@@ -141,11 +159,6 @@
 
   .mid-truck {
     transform: rotateY(180deg) !important;
-  }
-
-  .freeze,
-  .ocean {
-    grid-template-columns: repeat(1, 1fr);
   }
 
   .freeze img,

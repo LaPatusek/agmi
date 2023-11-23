@@ -32,6 +32,10 @@
   object-fit: cover;
 }
 
+.container > .service-image {
+  height: 650px;
+}
+
 .container-text {
   position: absolute;
   bottom: 10%;
@@ -110,7 +114,8 @@
   padding: 0 0.5rem;
 }
 
-.zaleta svg {
+.zaleta svg,
+.zaleta img {
   margin-bottom: 15px;
 }
 

@@ -1,7 +1,7 @@
 import busIcon from '../assets/busicon.webp';
 import midTruck from '../assets/midTruck.webp';
+import oceanImg from '../assets/service.jpg';
 import Truck from '../assets/truck.webp';
-import oceanImg from '../assets/zdj3.jpg';
 import styles from './Services.module.css';
 
 const Services = () => {

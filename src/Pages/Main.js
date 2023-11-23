@@ -2,6 +2,10 @@ import { ArrowRight2, TruckFast } from 'iconsax-react';
 import { Fragment, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import temporaryImage from '../assets/bus.jpeg';
+import flota from '../assets/noun-truck.webp';
+import quality from '../assets/ribbon.svg';
+import serviceImage from '../assets/service.jpg';
+import shield from '../assets/shield-checkmark.svg';
 import Blog from '../components/Blog/Blog';
 import { QUERY_POSTS, graphcms } from '../components/Graphql/Queries';
 import Header from '../components/Header/Header';
@@ -54,7 +58,13 @@ const Main = () => {
         </div>
         <div className={`${styles['second-row']} grid`}>
           <div className={`${styles.container} relative`}>
-            <img src={temporaryImage} alt='' width={'100%'} height={'auto'} />
+            <img
+              src={serviceImage}
+              alt=''
+              width={'100%'}
+              height={'650px'}
+              className={styles['service-image']}
+            />
             <div className={styles['container-text']}>
               <h3>Serwis samochodów ciężarowych</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -102,17 +112,17 @@ const Main = () => {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div className={`${styles.zaleta} center`}>
-            <TruckFast variant='Bold' color='#333333' size={'64'} />
+            <img src={flota} alt='' height={64} width={64} />
             <h4>Flota</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div className={`${styles.zaleta} center`}>
-            <TruckFast variant='Bold' color='#333333' size={'64'} />
+            <img src={shield} alt='' height={64} width={64} />
             <h4>Rzetelność</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div className={`${styles.zaleta} center`}>
-            <TruckFast variant='Bold' color='#333333' size={'64'} />
+            <img src={quality} alt='' height={64} width={64} />
             <h4>Wysoka jakość obsługi</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
