@@ -1,6 +1,6 @@
 import busIcon from '../assets/busicon.webp';
 import midTruck from '../assets/midTruck.webp';
-import oceanImg from '../assets/service.jpg';
+import oceanImg from '../assets/service.webp';
 import Truck from '../assets/truck.webp';
 import styles from './Services.module.css';
 
@@ -90,45 +90,9 @@ const Services = () => {
               Opis usługi, Opis usługi, Opis usługi, Opis usługi, Opis usługi,
               Opis usługi, Opis usługi, Opis usługi, Opis usługi, Opis usługi
             </h4>
-            {/* <ol>
-              <li>
-                <span>Zasięg: </span>
-              </li>
-              <li>
-                <span>Flota:</span>
-              </li>
-              <li>
-                <span>Ładowność:</span>
-              </li>
-              <li>
-                <span>Dodatkowe informacje:</span>
-              </li>
-            </ol> */}
           </div>
           <img src={oceanImg} alt='' />
         </div>
-
-        {/* <div className={`${styles.ocean} grid`}>
-          <img src={oceanImg} alt='' />
-          <div className={styles['ocean-text']}>
-            <h3>TRANSPORT KONTENERÓW MORSKICH</h3>
-            <h4>Opis usługi, Opis usługi, Opis usługi, Opis usługi</h4>
-            <ol>
-              <li>
-                <span>Zasięg:</span>
-              </li>
-              <li>
-                <span>Flota:</span>
-              </li>
-              <li>
-                <span>Ładowność:</span>
-              </li>
-              <li>
-                <span>Dodatkowe informacje:</span>
-              </li>
-            </ol>
-          </div>
-        </div> */}
       </div>
     </div>
   );

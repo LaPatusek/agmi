@@ -1,11 +1,13 @@
 import { ArrowRight2, TruckFast } from 'iconsax-react';
 import { Fragment, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import temporaryImage from '../assets/bus.jpeg';
+import busPhoto from '../assets/agmi foto 4.webp';
 import flota from '../assets/noun-truck.webp';
+import freeze from '../assets/refrigarated.webp';
 import quality from '../assets/ribbon.svg';
-import serviceImage from '../assets/service.jpg';
+import serviceImage from '../assets/service.webp';
 import shield from '../assets/shield-checkmark.svg';
+import test from '../assets/standard.webp';
 import Blog from '../components/Blog/Blog';
 import { QUERY_POSTS, graphcms } from '../components/Graphql/Queries';
 import Header from '../components/Header/Header';
@@ -26,7 +28,7 @@ const Main = () => {
 
         <div className={`${styles['first-row']} grid`}>
           <div className={`${styles.container} relative`}>
-            <img src={temporaryImage} alt='' width={'100%'} height={'auto'} />
+            <img src={busPhoto} alt='' width={'100%'} height={'650px'} />
             <div className={styles['container-text']}>
               <h3>Pojazdy o ładowności 1.5 - 7.5 tony</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -36,19 +38,9 @@ const Main = () => {
             </div>
           </div>
           <div className={`${styles.container} relative`}>
-            <img src={temporaryImage} alt='' width={'100%'} height={'auto'} />
+            <img src={test} alt='' width={'100%'} height={'650px'} />
             <div className={styles['container-text']}>
               <h3>Standardowymi plandekami o ładowności do 24 ton</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <Link to='/oferta'>
-                Więcej informacji <ArrowRight2 size={'18'} />
-              </Link>
-            </div>
-          </div>
-          <div className={`${styles.container} relative`}>
-            <img src={temporaryImage} alt='' width={'100%'} height={'auto'} />
-            <div className={styles['container-text']}>
-              <h3>Pojazdami chłodniczymi oraz izotermami</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <Link to='/oferta'>
                 Więcej informacji <ArrowRight2 size={'18'} />
@@ -74,9 +66,9 @@ const Main = () => {
             </div>
           </div>
           <div className={`${styles.container} relative`}>
-            <img src={temporaryImage} alt='' width={'100%'} height={'auto'} />
+            <img src={freeze} alt='' width={'100%'} height={'650px'} />
             <div className={styles['container-text']}>
-              <h3>Pusty box</h3>
+              <h3>Pojazdami chłodniczymi oraz izotermami</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <Link to='/oferta'>
                 Więcej informacji <ArrowRight2 size={'18'} />

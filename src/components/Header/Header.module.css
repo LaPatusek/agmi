@@ -69,6 +69,7 @@
 
   .background-image img {
     height: 75vh;
+    object-position: 100%;
   }
 
   .header::before {
