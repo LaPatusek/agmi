@@ -133,15 +133,7 @@
   filter: brightness(1.1);
 }
 
-@media screen and (max-width: 900px) {
-  .oferta {
-    padding: 4rem 1.5rem;
-  }
-
-  .oferta h2 {
-    margin-bottom: 25px;
-  }
-
+@media screen and (max-width: 1200px) {
   .first-row {
     grid-template-columns: repeat(1, 1fr);
     margin-bottom: 0;
@@ -151,11 +143,7 @@
   .zalety-wrap {
     grid-template-columns: repeat(1, 1fr);
   }
-
-  .zalety-wrap {
-    margin-bottom: 2rem;
-  }
-
+  
   .container {
     margin-bottom: 15px;
   }
@@ -173,6 +161,20 @@
     left: 0px;
     bottom: 0px;
     border: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .oferta {
+    padding: 4rem 1.5rem;
+  }
+
+  .oferta h2 {
+    margin-bottom: 25px;
+  }
+
+  .zalety-wrap {
+    margin-bottom: 2rem;
   }
 
   .container-text h3 {

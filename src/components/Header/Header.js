@@ -12,7 +12,7 @@ const Header = () => {
         Z nami <span>jesteś</span> <br /> zawsze <span> na czas </span>
       </h1>
       <div className={styles['background-image']}>
-        <img src={backgroundPhoto} alt='' />
+        <img src={backgroundPhoto} alt='' width={'100%'} height={'auto'} />
       </div>
     </div>
   );

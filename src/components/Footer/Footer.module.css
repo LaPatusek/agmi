@@ -150,9 +150,15 @@
   .footer-box {
     margin-top: 1rem;
   }
-  
-  .footer-box a {
-    margin-bottom: 10px;
+
+  .footer-box a,
+  .footer-box p {
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+
+  .container svg {
+    transform: translateY(-80%);
   }
 
   .boxes-wrap {
