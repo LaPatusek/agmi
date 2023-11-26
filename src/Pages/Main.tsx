@@ -1,5 +1,5 @@
 import { ArrowRight2, TruckFast } from 'iconsax-react';
-import { Fragment, useEffect, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import busPhoto from '../assets/agmi foto 4.webp';
 import flota from '../assets/noun-truck.webp';
@@ -8,16 +8,36 @@ import quality from '../assets/ribbon.svg';
 import serviceImage from '../assets/service.webp';
 import shield from '../assets/shield-checkmark.svg';
 import test from '../assets/standard.webp';
-import Blog from '../components/Blog/Blog';
+import Blog from '../components/Blog/Blog.tsx';
 import { QUERY_POSTS, graphcms } from '../components/Graphql/Queries';
-import Header from '../components/Header/Header';
+import Header from '../components/Header/Header.tsx';
 import styles from './Main.module.css';
 
-const Main = () => {
-  const [posts, setPosts] = useState([]);
+interface Article {
+  id: number;
+  slug: string;
+  title: string;
+  description: string;
+  createdAt: number;
+  photo: {
+    url: string;
+  };
+  content: {
+    html: string;
+  };
+}
+
+interface ApiResponse {
+  posts: Article[];
+}
+
+const Main: React.FC = () => {
+  const [posts, setPosts] = useState<Article[]>([]);
 
   useEffect(() => {
-    graphcms.request(QUERY_POSTS).then((res) => setPosts(res.posts));
+    graphcms
+      .request<ApiResponse>(QUERY_POSTS)
+      .then((res) => setPosts(res.posts));
   }, []);
 
   return (

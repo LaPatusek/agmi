@@ -1,8 +1,9 @@
+import React from 'react';
 import backgroundPhoto from '../../assets/agmi foto 1.webp';
 import logo from '../../assets/logov3.png';
 import styles from './Header.module.css';
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <div className={`${styles.header} relative`}>
       <div className={styles.logo}>

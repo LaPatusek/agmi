@@ -1,7 +1,8 @@
-import MasonryLayout from '../components/Elements/MansoryLayout/MasonryLayout';
+import React from 'react';
+import MasonryLayout from '../components/Elements/MansoryLayout/MasonryLayout.tsx';
 import styles from './Galeria.module.css';
 
-const Galeria = () => {
+const Galeria: React.FC = () => {
   return (
     <div className={styles.galeria}>
       <div className={`${styles['galeria-text']} center`}>

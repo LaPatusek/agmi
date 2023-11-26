@@ -1,10 +1,11 @@
+import React from 'react';
 import busIcon from '../assets/busicon.webp';
 import midTruck from '../assets/midTruck.webp';
 import oceanImg from '../assets/service.webp';
 import Truck from '../assets/truck.webp';
 import styles from './Services.module.css';
 
-const Services = () => {
+const Services: React.FC = () => {
   return (
     <div className={styles['services-wrap']}>
       <div className={styles['services-header']}>

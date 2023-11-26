@@ -3,7 +3,7 @@ import Masonry from 'react-masonry-css';
 import images from '../../../json/images.json';
 import styles from './MasonryLayout.module.css';
 
-const MasonryLayout = () => {
+const MasonryLayout: React.FC = () => {
   const breakpointColumnsObj = {
     default: 3,
     800: 2,

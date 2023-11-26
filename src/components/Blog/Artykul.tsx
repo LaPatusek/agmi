@@ -1,22 +1,40 @@
 import { Clock } from 'iconsax-react';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { QUERY_ONE_POSTS, graphcms } from '../Graphql/Queries';
 import styles from './Artykul.module.css';
 
-const Artykul = () => {
+interface Article {
+  id: number;
+  slug: string;
+  title: string;
+  description: string;
+  createdAt: number;
+  photo: {
+    url: string;
+  };
+  content: {
+    html: string;
+  };
+}
+
+interface ApiResponse {
+  posts: Article[];
+}
+
+const Artykul: React.FC = () => {
   const { slug } = useParams();
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState<Article[]>([]);
 
   useEffect(() => {
     graphcms
-      .request(QUERY_ONE_POSTS, { slug })
+      .request<ApiResponse>(QUERY_ONE_POSTS, { slug })
       .then((res) => setPosts(res.posts));
   }, [slug]);
 
   return (
     <div className={styles['article-wrap']}>
-      {posts.map((post) => (
+      {posts.map((post: Article) => (
         <article key={post.slug} className={`${styles['article']} grid`}>
           <span>
             <Clock size={'18'} />

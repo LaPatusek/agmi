@@ -1,8 +1,9 @@
 import { Call, Copyright, Facebook, Instagram, Location } from 'iconsax-react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <div className={styles.footer}>
       <div className={`${styles.socials} flex`}>
@@ -65,9 +66,7 @@ const Footer = () => {
               <div className={styles['icon-container']}>
                 <Call variant='Bold' color='#1a1a1a' />
               </div>
-              <p>
-                tel. 17 783 43 31
-              </p>
+              <p>tel. 17 783 43 31</p>
             </div>
 
             <div className={`${styles.container} flex relative`}>

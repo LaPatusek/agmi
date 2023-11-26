@@ -1,10 +1,21 @@
 import { Clock } from 'iconsax-react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Blog.module.css';
 
+interface Post {
+  id: number;
+  slug: string;
+  title: string;
+  description: string;
+  createdAt: number;
+  photo: {
+    url: string;
+  };
+}
+
 const Blog = ({ posts }) => {
-  const [itemsShowed, setItemsShowed] = useState(false);
+  const [itemsShowed, setItemsShowed] = useState<boolean>(false);
 
   const ShowAllHandler = () => {
     setItemsShowed((s) => !s);
@@ -15,7 +26,7 @@ const Blog = ({ posts }) => {
       <h3>Aktualności</h3>
       <div className={`${styles.blog} grid`}>
         {!itemsShowed &&
-          posts?.slice(0, 1).map((post) => (
+          posts?.slice(0, 1).map((post: Post) => (
             <Link key={post.id} to={`/article/${post.slug}`}>
               <div className={`${styles['post-container']} grid`}>
                 <img

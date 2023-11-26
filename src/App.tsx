@@ -1,15 +1,15 @@
-import { Fragment, useEffect } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
-import Galeria from './Pages/Galeria';
-import Kontakt from './Pages/Kontakt';
-import Main from './Pages/Main';
-import Rekrutacja from './Pages/Rekrutacja';
-import Services from './Pages/Services';
-import Artykul from './components/Blog/Artykul';
-import Footer from './components/Footer/Footer';
-import Nav from './components/Nav/Nav';
+import Galeria from './Pages/Galeria.tsx';
+import Kontakt from './Pages/Kontakt.tsx';
+import Main from './Pages/Main.tsx';
+import Rekrutacja from './Pages/Rekrutacja.tsx';
+import Services from './Pages/Services.tsx';
+import Artykul from './components/Blog/Artykul.tsx';
+import Footer from './components/Footer/Footer.tsx';
+import Nav from './components/Nav/Nav.tsx';
 
-function App() {
+const App: React.FC = () => {
   const { pathname, hash, key } = useLocation();
 
   useEffect(() => {
@@ -49,6 +49,6 @@ function App() {
       </footer>
     </Fragment>
   );
-}
+};
 
 export default App;

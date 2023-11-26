@@ -1,18 +1,18 @@
 import { HambergerMenu } from 'iconsax-react';
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logov3.png';
 import styles from './Nav.module.css';
 
-const Nav = () => {
-  const [menuState, setMenuState] = useState(false);
-  const menuRef = useRef(null);
-  const firstRef = useRef(null);
-  const secondRef = useRef(null);
-  const thirdRef = useRef(null);
-  const forthRef = useRef(null);
-  const fifthRef = useRef(null);
-  const sixthRef = useRef(null);
+const Nav: React.FC = () => {
+  const [menuState, setMenuState] = useState<boolean>(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+  const firstRef = useRef<HTMLAnchorElement>(null);
+  const secondRef = useRef<HTMLAnchorElement>(null);
+  const thirdRef = useRef<HTMLAnchorElement>(null);
+  const forthRef = useRef<HTMLAnchorElement>(null);
+  const fifthRef = useRef<HTMLDivElement>(null);
+  const sixthRef = useRef<HTMLAnchorElement>(null);
 
   const menuHandler = () => {
     setMenuState((s) => !s);
@@ -22,13 +22,13 @@ const Nav = () => {
     if (menuState) {
       document.body.style.overflowY = 'hidden';
 
-      const menuRefCurr = menuRef.current;
-      const firstRefCurr = firstRef.current;
-      const secondRefCurr = secondRef.current;
-      const thirdRefCurr = thirdRef.current;
-      const forthRefCurr = forthRef.current;
-      const fifthRefCurr = fifthRef.current;
-      const sixthRefCurr = sixthRef.current;
+      const menuRefCurr = menuRef.current!;
+      const firstRefCurr = firstRef.current!;
+      const secondRefCurr = secondRef.current!;
+      const thirdRefCurr = thirdRef.current!;
+      const forthRefCurr = forthRef.current!;
+      const fifthRefCurr = fifthRef.current!;
+      const sixthRefCurr = sixthRef.current!;
 
       setTimeout(() => {
         menuRefCurr?.classList.toggle(styles['active-menu-900']);

@@ -2,7 +2,13 @@ import GoogleMapReact from 'google-map-react';
 import React from 'react';
 import styles from './Map.module.css';
 
-const Map = () => {
+declare var process: {
+  env: {
+    REACT_APP_MAPS_API: string;
+  };
+};
+
+const Map: React.FC = () => {
   const location = {
     center: {
       lat: 50.06119077930387,
@@ -11,7 +17,7 @@ const Map = () => {
     zoom: 17,
   };
 
-  const renderMarkers = (map, maps) => {
+  const renderMarkers = (map: any, maps: any) => {
     let marker = new maps.Marker({
       position: { lat: location.center.lat, lng: location.center.lng },
       map,

@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import useInput from '../components/Hooks/useInput';
+import React, { useState } from 'react';
+import useInput from '../components/Hooks/useInput.tsx';
 import styles from './Rekrutacja.module.css';
 
 const Kontakt = () => {
-  const [formIsSent, setFormIsSent] = useState(false);
+  const [formIsSent, setFormIsSent] = useState<boolean>(false);
 
   const {
     value: enteredName,
@@ -12,7 +12,9 @@ const Kontakt = () => {
     inputBlurHandler: nameBlurHandler,
     hasError: nameHasError,
     reset: nameReset,
-  } = useInput((value) => value.trim() !== '');
+  } = useInput({
+    validateValue: (value: string) => value.trim() !== '',
+  });
 
   const {
     value: enteredSurname,
@@ -21,7 +23,9 @@ const Kontakt = () => {
     inputBlurHandler: surnameBlurHandler,
     hasError: surnameHasError,
     reset: surnameReset,
-  } = useInput((value) => value.trim() !== '');
+  } = useInput({
+    validateValue: (value: string) => value.trim() !== '',
+  });
 
   const {
     value: enteredPhone,
@@ -30,7 +34,9 @@ const Kontakt = () => {
     inputBlurHandler: phoneBlurHandler,
     hasError: phoneHasError,
     reset: phoneReset,
-  } = useInput((value) => value.trim() !== '');
+  } = useInput({
+    validateValue: (value: string) => value.trim() !== '',
+  });
 
   const {
     value: enteredTopic,
@@ -39,7 +45,9 @@ const Kontakt = () => {
     inputBlurHandler: topicBlurHandler,
     hasError: topicHasError,
     reset: topicReset,
-  } = useInput((value) => value.trim() !== '');
+  } = useInput({
+    validateValue: (value: string) => value.trim() !== '',
+  });
 
   const {
     value: enteredMail,
@@ -48,7 +56,9 @@ const Kontakt = () => {
     inputBlurHandler: mailBlurHandler,
     hasError: mailHasError,
     reset: mailReset,
-  } = useInput((value) => value.trim().includes('@'));
+  } = useInput({
+    validateValue: (value: string) => value.trim().includes('@'),
+  });
 
   const {
     value: enteredMessage,
@@ -57,7 +67,9 @@ const Kontakt = () => {
     inputBlurHandler: messageBlurHandler,
     hasError: messageHasError,
     reset: messageReset,
-  } = useInput((value) => value.trim() !== '');
+  } = useInput({
+    validateValue: (value: string) => value.trim() !== '',
+  });
 
   let formIsValid = false;
 
@@ -249,7 +261,7 @@ const Kontakt = () => {
             <textarea
               id='wiadomosc'
               name='message'
-              rows={'10'}
+              rows={10}
               value={enteredMessage}
               placeholder='Twoja Wiadomość...'
               onChange={messageChangeHandler}
