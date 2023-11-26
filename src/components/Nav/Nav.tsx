@@ -1,7 +1,7 @@
 import { HambergerMenu } from 'iconsax-react';
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/logov3.png';
+import logo from '../../assets/logov3.webp';
 import styles from './Nav.module.css';
 
 const Nav: React.FC = () => {

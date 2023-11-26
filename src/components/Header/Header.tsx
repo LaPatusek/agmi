@@ -1,6 +1,6 @@
 import React from 'react';
 import backgroundPhoto from '../../assets/agmi foto 1.webp';
-import logo from '../../assets/logov3.png';
+import logo from '../../assets/logov3.webp';
 import styles from './Header.module.css';
 
 const Header: React.FC = () => {
