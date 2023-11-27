@@ -29,7 +29,8 @@
 
 .post-container img {
   width: 100%;
-  height: auto;
+  height: 180.953px;
+  object-fit: contain;
   aspect-ratio: auto 404 / 180.953;
 }
 
