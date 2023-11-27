@@ -48,7 +48,12 @@ const Main: React.FC = () => {
 
         <div className={`${styles['first-row']} grid`}>
           <div className={`${styles.container} relative`}>
-            <img src={busPhoto} alt='' width={'100%'} height={'650px'} />
+            <img
+              src={busPhoto}
+              alt='Pojazdy o ładowności 1.5 - 7.5 tony'
+              width={'100%'}
+              height={'650px'}
+            />
             <div className={styles['container-text']}>
               <h3>Pojazdy o ładowności 1.5 - 7.5 tony</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -58,7 +63,12 @@ const Main: React.FC = () => {
             </div>
           </div>
           <div className={`${styles.container} relative`}>
-            <img src={test} alt='' width={'100%'} height={'650px'} />
+            <img
+              src={test}
+              alt='Standardowymi plandekami o ładowności do 24 ton'
+              width={'100%'}
+              height={'650px'}
+            />
             <div className={styles['container-text']}>
               <h3>Standardowymi plandekami o ładowności do 24 ton</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -72,7 +82,7 @@ const Main: React.FC = () => {
           <div className={`${styles.container} relative`}>
             <img
               src={serviceImage}
-              alt=''
+              alt='Serwis samochodów ciężarowych'
               width={'100%'}
               height={'650px'}
               className={styles['service-image']}
@@ -86,7 +96,12 @@ const Main: React.FC = () => {
             </div>
           </div>
           <div className={`${styles.container} relative`}>
-            <img src={freeze} alt='' width={'100%'} height={'650px'} />
+            <img
+              src={freeze}
+              alt='Pojazdami chłodniczymi oraz izotermami'
+              width={'100%'}
+              height={'650px'}
+            />
             <div className={styles['container-text']}>
               <h3>Pojazdami chłodniczymi oraz izotermami</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -124,17 +139,22 @@ const Main: React.FC = () => {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div className={`${styles.zaleta} center`}>
-            <img src={flota} alt='' height={64} width={64} />
+            <img src={flota} alt='Flota' height={64} width={64} />
             <h4>Flota</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div className={`${styles.zaleta} center`}>
-            <img src={shield} alt='' height={64} width={64} />
+            <img src={shield} alt='Rzetelność' height={64} width={64} />
             <h4>Rzetelność</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div className={`${styles.zaleta} center`}>
-            <img src={quality} alt='' height={64} width={64} />
+            <img
+              src={quality}
+              alt='Wysoka jakość obsługi'
+              height={64}
+              width={64}
+            />
             <h4>Wysoka jakość obsługi</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>

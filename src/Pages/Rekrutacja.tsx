@@ -156,7 +156,9 @@ const Kontakt = () => {
           </p>
           <p>
             lub w formie elektronicznej na adres:{' '}
-            <a href='mailto:'> biuro@agmitransport.pl </a>
+            <a href='mailto: rekrutacja@agmitransport.pl'>
+              rekrutacja@agmitransport.pl
+            </a>
             <br />
             lub wysłać za pomocą poniższego formularza:
           </p>

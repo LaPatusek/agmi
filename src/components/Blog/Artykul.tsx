@@ -42,7 +42,12 @@ const Artykul: React.FC = () => {
           </span>
           <h2>{post.title}</h2>
           <div className={styles['image-wrap']}>
-            <img src={post.photo.url} alt={post.title} />
+            <img
+              src={post.photo.url}
+              alt={post.title}
+              width={'100%'}
+              height={'auto'}
+            />
           </div>
           <p className={styles.description}>{post.description}</p>
           <div

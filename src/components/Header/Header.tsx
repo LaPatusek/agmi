@@ -8,7 +8,12 @@ const Header: React.FC = () => {
       <h1>
         Z nami <span>jesteś</span> <br /> zawsze <span> na czas </span>
       </h1>
-      <img src={backgroundPhoto} alt='' width={'100%'} height={'auto'} />
+      <img
+        src={backgroundPhoto}
+        alt='AGMI - Transport Samochodowy'
+        width={'100%'}
+        height={'auto'}
+      />
     </div>
   );
 };

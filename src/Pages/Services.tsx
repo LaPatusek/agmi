@@ -21,7 +21,7 @@ const Services: React.FC = () => {
       <div className={`${styles.services}`}>
         <div className={`${styles['three-in-row']} grid`}>
           <div className={`${styles.container} grid`}>
-            <img src={busIcon} alt='' />
+            <img src={busIcon} alt='Pojazdy o ładowności 1.5 - 7.5 tony' />
             <h3>POJAZDY O ŁADOWNOŚCI 1.5 - 7.5 TONY</h3>
             <h4>Opis usługi, Opis usługi, Opis usługi, Opis usługi</h4>
             <ol>
@@ -32,7 +32,7 @@ const Services: React.FC = () => {
                 <span>Flota:</span>
               </li>
               <li>
-                <span>Ładowność:</span>
+                <span>Ładowność:</span> 1.5 - 7.5 tony
               </li>
               <li>
                 <span>Dodatkowe informacje:</span>
@@ -41,7 +41,11 @@ const Services: React.FC = () => {
           </div>
 
           <div className={`${styles.container} grid`}>
-            <img src={midTruck} alt='' className={styles['mid-truck']} />
+            <img
+              src={midTruck}
+              alt='Standardowymi plandekami o ładowności do 24 ton'
+              className={styles['mid-truck']}
+            />
             <h3>STANDARDOWYMI PLANDEKAMI O ŁADOWNOŚCI DO 24 TON</h3>
             <h4>Opis usługi, Opis usługi, Opis usługi, Opis usługi</h4>
             <ol>
@@ -52,7 +56,7 @@ const Services: React.FC = () => {
                 <span>Flota:</span>
               </li>
               <li>
-                <span>Ładowność:</span>
+                <span>Ładowność:</span> Do 24 ton
               </li>
               <li>
                 <span>Dodatkowe informacje:</span>
@@ -61,7 +65,7 @@ const Services: React.FC = () => {
           </div>
 
           <div className={`${styles.container} grid`}>
-            <img src={Truck} alt='' />
+            <img src={Truck} alt='Pojazdami chłodniczymi oraz izotermami' />
             <h3>POJAZDAMI CHŁODNICZYMI ORAZ IZOTERMAMI</h3>
             <h4>Opis usługi, Opis usługi, Opis usługi, Opis usługi</h4>
             <ol>
@@ -92,7 +96,7 @@ const Services: React.FC = () => {
               Opis usługi, Opis usługi, Opis usługi, Opis usługi, Opis usługi
             </h4>
           </div>
-          <img src={oceanImg} alt='' />
+          <img src={oceanImg} alt='Serwis samochodów ciężarowych' />
         </div>
       </div>
     </div>

@@ -82,7 +82,9 @@ const Footer: React.FC = () => {
                 </svg>
               </div>
               <p>
-                <a href='mailto:'> biuro@agmitransport.pl </a>
+                <a href='mailto: andrzej@agmitransport.pl'>
+                  andrzej@agmitransport.pl
+                </a>
               </p>
             </div>
           </div>
