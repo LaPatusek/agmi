@@ -1,20 +1,7 @@
-.background-image img {
+.header img {
   width: 100%;
   max-height: 75vh;
   object-fit: cover;
-}
-
-.logo {
-  position: absolute;
-  right: 4rem;
-  top: 3%;
-  z-index: 6;
-}
-
-.logo img {
-  height: 90px;
-  width: 250px;
-  object-fit: contain;
 }
 
 .header h1 {
@@ -56,18 +43,12 @@
 }
 
 @media screen and (max-width: 900px) {
-  .logo {
-    right: 50%;
-    transform: translateX(50%);
-    top: 2.5%;
-  }
-
   .header h1 {
     width: min-content;
     top: 27%;
   }
 
-  .background-image img {
+  .header img {
     height: 75vh;
     object-position: 100%;
   }

@@ -8,8 +8,8 @@ const Galeria: React.FC = () => {
       <div className={`${styles['galeria-text']} center`}>
         <h1> Europa Oczami naszych kierowców</h1>
         <h2>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          imperdiet malesuada lacinia.
+          Trasy europejskie: Piękne widoki i niezapomniane momenty, obserwowane
+          z perspektywy naszych profesjonalistów.
         </h2>
       </div>
       <MasonryLayout />
