@@ -2,6 +2,7 @@
   width: 100%;
   max-height: 75vh;
   object-fit: cover;
+  aspect-ratio: auto 1240 / 697.5;
 }
 
 .header h1 {

@@ -30,6 +30,7 @@
 .post-container img {
   width: 100%;
   height: auto;
+  aspect-ratio: auto 404 / 180.953;
 }
 
 .post-container span {
