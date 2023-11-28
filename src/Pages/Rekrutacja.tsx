@@ -1,9 +1,26 @@
-import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import React, { ChangeEvent, useRef, useState } from 'react';
 import useInput from '../components/Hooks/useInput.tsx';
 import styles from './Rekrutacja.module.css';
 
-const Kontakt = () => {
+declare var process: {
+  env: {
+    REACT_APP_SMTP_ID: string;
+    REACT_APP_TEMPLATE_ID: string;
+    REACT_APP_PUBLIC_KEY: string;
+  };
+};
+
+const Kontakt: React.FC = () => {
   const [formIsSent, setFormIsSent] = useState<boolean>(false);
+  const [enteredFile, setEnteredFile] = useState('');
+  const formRef = useRef(null);
+
+  const fileChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
+    setEnteredFile(e.target.defaultValue);
+
+    console.log(enteredFile);
+  };
 
   const {
     value: enteredName,
@@ -84,12 +101,28 @@ const Kontakt = () => {
     formIsValid = true;
   }
 
-  const formHandler = (e) => {
+  const formHandler = (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!formIsValid) {
       return;
     }
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SMTP_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        formRef.current!,
+        process.env.REACT_APP_PUBLIC_KEY,
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        },
+      );
 
     setFormIsSent(true);
     nameReset();
@@ -100,7 +133,7 @@ const Kontakt = () => {
     messageReset();
   };
 
-  const resetHandler = (e) => {
+  const resetHandler = (e: React.FormEvent) => {
     e.preventDefault();
 
     nameReset();
@@ -163,7 +196,7 @@ const Kontakt = () => {
             lub wysłać za pomocą poniższego formularza:
           </p>
         </div>
-        <form onSubmit={formHandler}>
+        <form onSubmit={formHandler} ref={formRef}>
           <div className={`${styles['rows-wrap']} grid`}>
             <div className={`${styles['first-row']} grid`}>
               <label
@@ -227,6 +260,7 @@ const Kontakt = () => {
               <input
                 type='number'
                 id='phone'
+                name='user_phone'
                 autoComplete='false'
                 placeholder='Twój Numer Telefonu'
                 value={enteredPhone}
@@ -272,8 +306,15 @@ const Kontakt = () => {
           </div>
           <div className={`${styles['required-cv']} grid`}>
             <div className={styles['cv-input']}>
-              <label htmlFor='CV'>Twoje CV*</label> <br />
-              <input type='file' id='CV' />
+              <label htmlFor='CV'>Twoje CV (Tylko PDF)*</label> <br />
+              <input
+                type='file'
+                id='CV'
+                name='file'
+                // accept='application/pdf'
+                // value={enteredFile}
+                onChange={fileChangeHandler}
+              />
             </div>
             <p className={styles.required}>*Wymagane</p>
           </div>
