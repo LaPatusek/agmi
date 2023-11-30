@@ -1,26 +1,13 @@
-import emailjs from '@emailjs/browser';
-import React, { ChangeEvent, useRef, useState } from 'react';
+import axios from 'axios';
+import { TickCircle } from 'iconsax-react';
+import React, { useState } from 'react';
 import useInput from '../components/Hooks/useInput.tsx';
 import styles from './Rekrutacja.module.css';
 
-declare var process: {
-  env: {
-    REACT_APP_SMTP_ID: string;
-    REACT_APP_TEMPLATE_ID: string;
-    REACT_APP_PUBLIC_KEY: string;
-  };
-};
-
 const Kontakt: React.FC = () => {
   const [formIsSent, setFormIsSent] = useState<boolean>(false);
-  const [enteredFile, setEnteredFile] = useState('');
-  const formRef = useRef(null);
-
-  const fileChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
-    setEnteredFile(e.target.defaultValue);
-
-    console.log(enteredFile);
-  };
+  const [enteredFile, setEnteredFile] = useState<File | null>(null);
+  const [fileError, setFileError] = useState<boolean>(false);
 
   const {
     value: enteredName,
@@ -56,17 +43,6 @@ const Kontakt: React.FC = () => {
   });
 
   const {
-    value: enteredTopic,
-    isValid: topicIsValid,
-    valueChangeHandler: topicChangeHandler,
-    inputBlurHandler: topicBlurHandler,
-    hasError: topicHasError,
-    reset: topicReset,
-  } = useInput({
-    validateValue: (value: string) => value.trim() !== '',
-  });
-
-  const {
     value: enteredMail,
     isValid: mailIsValid,
     valueChangeHandler: mailChangeHandler,
@@ -88,15 +64,32 @@ const Kontakt: React.FC = () => {
     validateValue: (value: string) => value.trim() !== '',
   });
 
+  const validateFile = (file: File | null) => {
+    if (!file) {
+      setFileError(true);
+    } else {
+      setFileError(false);
+    }
+  };
+
+  const fileHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFileError(false);
+    setEnteredFile(e.target.files ? e.target.files[0] : null);
+  };
+
+  const fileBlurHandler = () => {
+    validateFile(enteredFile);
+  };
+
   let formIsValid = false;
 
   if (
     messageIsValid &&
-    topicIsValid &&
     nameIsValid &&
     mailIsValid &&
     surnameIsValid &&
-    phoneIsValid
+    phoneIsValid &&
+    enteredFile
   ) {
     formIsValid = true;
   }
@@ -104,44 +97,45 @@ const Kontakt: React.FC = () => {
   const formHandler = (e: React.FormEvent) => {
     e.preventDefault();
 
+    const temat = `od ${enteredName} ${' '} ${enteredSurname}`;
+    const mailBody = `${enteredMessage} \n tel:${' '}${enteredPhone} \n${'             '} mail:${' '}${enteredMail}`;
+
+    validateFile(enteredFile);
+
     if (!formIsValid) {
       return;
     }
 
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_SMTP_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        formRef.current!,
-        process.env.REACT_APP_PUBLIC_KEY,
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        },
-      );
+    const formData = new FormData();
+    formData.append('from', 'snwtestowy@gmail.com');
+    formData.append('subject', temat);
+    formData.append('html', mailBody);
 
+    if (enteredFile !== null) {
+      formData.append('attachments', enteredFile);
+    }
+
+    sendEmail(formData);
     setFormIsSent(true);
+    setEnteredFile(null);
     nameReset();
     surnameReset();
-    topicReset();
     mailReset();
     phoneReset();
     messageReset();
   };
 
-  const resetHandler = (e: React.FormEvent) => {
-    e.preventDefault();
-
-    nameReset();
-    surnameReset();
-    topicReset();
-    mailReset();
-    phoneReset();
-    messageReset();
+  const sendEmail = async (formData: FormData) => {
+    try {
+      await axios.post('http://localhost:3001/send-email', formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      });
+      console.log('Email sent successfully');
+    } catch (error) {
+      console.error('Error sending email:', error);
+    }
   };
 
   return (
@@ -189,14 +183,14 @@ const Kontakt: React.FC = () => {
           </p>
           <p>
             lub w formie elektronicznej na adres:{' '}
-            <a href='mailto: rekrutacja@agmitransport.pl'>
+            <a href='mailto:rekrutacja@agmitransport.pl'>
               rekrutacja@agmitransport.pl
             </a>
             <br />
             lub wysłać za pomocą poniższego formularza:
           </p>
         </div>
-        <form onSubmit={formHandler} ref={formRef}>
+        <form onSubmit={formHandler}>
           <div className={`${styles['rows-wrap']} grid`}>
             <div className={`${styles['first-row']} grid`}>
               <label
@@ -271,24 +265,6 @@ const Kontakt: React.FC = () => {
           </div>
           <div className={`${styles['full-size']} grid`}>
             <label
-              htmlFor='topic'
-              className={topicHasError ? styles.error : ''}
-            >
-              Temat*
-            </label>
-            <input
-              type='text'
-              id='topic'
-              name='user_topic'
-              placeholder='Temat'
-              autoComplete='false'
-              value={enteredTopic}
-              onChange={topicChangeHandler}
-              onBlur={topicBlurHandler}
-            />
-          </div>
-          <div className={`${styles['full-size']} grid`}>
-            <label
               htmlFor='wiadomosc'
               className={messageHasError ? styles.error : ''}
             >
@@ -306,26 +282,29 @@ const Kontakt: React.FC = () => {
           </div>
           <div className={`${styles['required-cv']} grid`}>
             <div className={styles['cv-input']}>
-              <label htmlFor='CV'>Twoje CV (Tylko PDF)*</label> <br />
+              <label htmlFor='CV' className={fileError ? styles.error : ''}>
+                Twoje CV (Tylko PDF)*
+              </label>
+              <br />
               <input
                 type='file'
                 id='CV'
                 name='file'
-                // accept='application/pdf'
-                // value={enteredFile}
-                onChange={fileChangeHandler}
+                accept='application/pdf'
+                onChange={fileHandler}
+                onBlur={fileBlurHandler}
               />
             </div>
             <p className={styles.required}>*Wymagane</p>
           </div>
           <div className={`${styles['buttons-wrap']} center`}>
-            <button onClick={resetHandler}>Reset</button>
             <button type='submit' value={'Send'}>
               Wyślij
             </button>
           </div>
           {formIsSent && (
             <div className={styles['mess-after-form']}>
+              <TickCircle size={26} />
               <p>Dziękujemy za kontakt!</p>
             </div>
           )}
