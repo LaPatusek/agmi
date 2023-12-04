@@ -80,7 +80,10 @@ const Services: React.FC = () => {
               </ol>
               Świadczymy również usługi z zakresu sprzedaży, wymiany oraz
               wulkanizacji opon. <br /> kontakt : +48 508 153 332 <br /> e-mail
-              : serwis@agmitransport.pl
+              :{' '}
+              <a href='mailto:serwis@agmitransport.pl'>
+                serwis@agmitransport.pl
+              </a>
             </h4>
           </div>
           <img src={oceanImg} alt='Serwis samochodów ciężarowych' />

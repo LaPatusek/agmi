@@ -154,6 +154,8 @@ const Kontakt: React.FC = () => {
           </svg>
           <p>
             <a href='mailto:biuro@agmitransport.pl'> biuro@agmitransport.pl </a>
+          </p>
+          <p>
             <a href='mailto:andrzej@agmitransport.pl'>
               andrzej@agmitransport.pl
             </a>

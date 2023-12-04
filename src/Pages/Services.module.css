@@ -114,21 +114,21 @@
   font-size: 44px;
   line-height: 52px;
   text-transform: uppercase;
-  color: var(--text-gray);
-}
-
-.freeze-text h3 {
   text-align: right;
+  color: var(--text-gray);
 }
 
 .freeze-text h4 {
   font-size: 18px;
   line-height: 22px;
-}
-
-.freeze-text h4 {
   width: 90%;
   margin-left: auto;
+}
+
+.freeze-text h4 > a {
+  color: #000;
+  text-decoration: underline;
+  font-family: 'monsterrat-medium';
 }
 
 .freeze-text ol {
