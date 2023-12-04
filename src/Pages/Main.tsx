@@ -103,9 +103,13 @@ const Main: React.FC = () => {
               className={`${styles['container-text']} ${styles['left-container']}`}
             >
               <h3>SERWIS SAMOCHODOWY</h3>
-              <p>
+              <p className={styles['service-paragraph']}>
                 Trans Service specjalizuje się w naprawach samochodów
-                ciężarowych, osobowych oraz naczep.
+                ciężarowych, osobowych oraz naczep. <br />{' '}
+              </p>
+              <p className={styles.hour}>
+                Godziny otwarcia <br />
+                Pon. - Pn. 8:00 - 17:00 <br /> Sobota 8:00 - 13:00
               </p>
               <Link to='/oferta'>
                 Więcej informacji <ArrowRight2 size={'18'} />

@@ -86,7 +86,13 @@ const Services: React.FC = () => {
               </a>
             </h4>
           </div>
-          <img src={oceanImg} alt='Serwis samochodów ciężarowych' />
+          <div className={`${styles['image-wrap']} relative`}>
+            <img src={oceanImg} alt='Serwis samochodów ciężarowych' />
+            <h5 className={styles.hour}>
+              Godziny otwarcia <br />
+              Pon. - Pn. 8:00 - 17:00 <br /> Sobota 8:00 - 13:00
+            </h5>
+          </div>
         </div>
       </div>
     </div>

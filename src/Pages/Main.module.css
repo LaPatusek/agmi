@@ -55,6 +55,14 @@
   margin-bottom: 20px;
 }
 
+.service-paragraph {
+  margin-bottom: 10px !important;
+}
+
+.hour {
+  font-family: 'monsterrat-medium';
+}
+
 .container-text a {
   background-color: var(--main-yellow);
   padding: 8px 13px;
