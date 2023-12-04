@@ -1,13 +1,12 @@
 import { ArrowRight2, TruckFast } from 'iconsax-react';
 import React, { Fragment, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import busPhoto from '../assets/agmi foto 4.webp';
+import busPhoto from '../assets/agmi foto 2.webp';
 import flota from '../assets/noun-truck.webp';
-import freeze from '../assets/refrigarated.webp';
 import quality from '../assets/ribbon.svg';
-import serviceImage from '../assets/service.webp';
+import test from '../assets/sec_photo.webp';
+import serviceImage from '../assets/serwis.webp';
 import shield from '../assets/shield-checkmark.svg';
-import test from '../assets/standard.webp';
 import Blog from '../components/Blog/Blog.tsx';
 import { QUERY_POSTS, graphcms } from '../components/Graphql/Queries';
 import Header from '../components/Header/Header.tsx';
@@ -46,32 +45,23 @@ const Main: React.FC = () => {
       <div className={styles.oferta}>
         <h2>Sprawdź naszą ofertę</h2>
 
-        <div className={`${styles['first-row']} grid`}>
-          <div className={`${styles.container} relative`}>
-            <img
-              src={busPhoto}
-              alt='Pojazdy o ładowności 1.5 - 7.5 tony'
-              width={'100%'}
-              height={'650px'}
-            />
-            <div className={styles['container-text']}>
-              <h3>Pojazdy o ładowności 1.5 - 7.5 tony</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <Link to='/oferta'>
-                Więcej informacji <ArrowRight2 size={'18'} />
-              </Link>
-            </div>
-          </div>
+        <div className={`${styles['first-row']}`}>
           <div className={`${styles.container} relative`}>
             <img
               src={test}
-              alt='Standardowymi plandekami o ładowności do 24 ton'
+              alt='TRANSPORT I SPEDYCJA MIĘDZYNARODOWA'
               width={'100%'}
               height={'650px'}
             />
-            <div className={styles['container-text']}>
-              <h3>Standardowymi plandekami o ładowności do 24 ton</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div
+              className={`${styles['container-text']}  ${styles['right-container']}`}
+            >
+              <h3>TRANSPORT I SPEDYCJA MIĘDZYNARODOWA</h3>
+              <p>
+                Interesuje Cię transport międzynarodowy lub usługa spedycyjna.
+                Skontaktuj się z nami, a my zaplanujemy i zrealzujemy ją
+                posiadanym przez nas nowoczesnym taborem samochodowym.
+              </p>
               <Link to='/oferta'>
                 Więcej informacji <ArrowRight2 size={'18'} />
               </Link>
@@ -81,15 +71,21 @@ const Main: React.FC = () => {
         <div className={`${styles['second-row']} grid`}>
           <div className={`${styles.container} relative`}>
             <img
-              src={serviceImage}
-              alt='Serwis samochodów ciężarowych'
+              src={busPhoto}
+              alt='TRANSPORT KRAJOWY I SPEDYCJA'
               width={'100%'}
               height={'650px'}
-              className={styles['service-image']}
             />
-            <div className={styles['container-text']}>
-              <h3>Serwis samochodów ciężarowych</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div
+              className={`${styles['container-text']} ${styles['left-container']}`}
+            >
+              <h3>TRANSPORT KRAJOWY I SPEDYCJA</h3>
+              <p>
+                Realizujemy zlecenia transportowe ciężarowe pojazdami o
+                ładowaności od 100 kg do 24000 kg, wspierając zarówno duże, jak
+                i mniejsze przedsiębiorstwa. Oferujemy zarówno usługi
+                całopojazdowe FTL, jak i drobnicowe LTL.
+              </p>
               <Link to='/oferta'>
                 Więcej informacji <ArrowRight2 size={'18'} />
               </Link>
@@ -97,14 +93,20 @@ const Main: React.FC = () => {
           </div>
           <div className={`${styles.container} relative`}>
             <img
-              src={freeze}
-              alt='Pojazdami chłodniczymi oraz izotermami'
+              src={serviceImage}
+              alt='SERWIS SAMOCHODOWY'
               width={'100%'}
               height={'650px'}
+              className={styles['service-image']}
             />
-            <div className={styles['container-text']}>
-              <h3>Pojazdami chłodniczymi oraz izotermami</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div
+              className={`${styles['container-text']} ${styles['left-container']}`}
+            >
+              <h3>SERWIS SAMOCHODOWY</h3>
+              <p>
+                Trans Service specjalizuje się w naprawach samochodów
+                ciężarowych, osobowych oraz naczep.
+              </p>
               <Link to='/oferta'>
                 Więcej informacji <ArrowRight2 size={'18'} />
               </Link>
@@ -132,21 +134,18 @@ const Main: React.FC = () => {
         </h3>
         <div className={`${styles['zalety-wrap']} grid`}>
           <div className={`${styles.zaleta} center`}>
-            <TruckFast variant='Bold' color='#333333' size={'64'} />
+            <TruckFast variant='Bold' size={'64'} />
             <h4>
               Szybkość <br /> działania
             </h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div className={`${styles.zaleta} center`}>
             <img src={flota} alt='Flota' height={64} width={64} />
             <h4>Flota</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div className={`${styles.zaleta} center`}>
             <img src={shield} alt='Rzetelność' height={64} width={64} />
             <h4>Rzetelność</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div className={`${styles.zaleta} center`}>
             <img
@@ -156,7 +155,6 @@ const Main: React.FC = () => {
               width={64}
             />
             <h4>Wysoka jakość obsługi</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
         <div className={`${styles['buttons-wrap']} center`}>

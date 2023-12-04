@@ -88,7 +88,7 @@ const Kontakt: React.FC = () => {
     formIsValid = true;
   }
 
-  const formHandler = (e) => {
+  const formHandler = (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!formIsValid) {
@@ -104,7 +104,7 @@ const Kontakt: React.FC = () => {
     messageReset();
   };
 
-  const resetHandler = (e) => {
+  const resetHandler = (e: React.FormEvent) => {
     e.preventDefault();
 
     nameReset();
@@ -119,17 +119,14 @@ const Kontakt: React.FC = () => {
     <div className={styles.kontakt}>
       <div className={`${styles['kontakt-header']} center`}>
         <h1>Skontaktuj się z nami</h1>
-        <h2>
-          On this page you can find our contact details and a simple form you{' '}
-          <br />
-          can submit if you have specific queries you would like our feedback on
-        </h2>
+        <h2>A my zaplanujemy i zrealizujemy Twoje zamówienie</h2>
       </div>
 
       <div className={`${styles.dane} grid`}>
         <div className={`${styles.container} center`}>
           <Call variant='Bold' size={iconSize} />
-          <p>tel. 17 783 43 31</p>
+          <p>17 783 43 31</p>
+          <p>535 198 620</p>
         </div>
 
         <div className={`${styles.container} center`}>
@@ -156,7 +153,10 @@ const Kontakt: React.FC = () => {
             <path d='M424 80H88a56.06 56.06 0 00-56 56v240a56.06 56.06 0 0056 56h336a56.06 56.06 0 0056-56V136a56.06 56.06 0 00-56-56zm-14.18 92.63l-144 112a16 16 0 01-19.64 0l-144-112a16 16 0 1119.64-25.26L256 251.73l134.18-104.36a16 16 0 0119.64 25.26z' />
           </svg>
           <p>
-            <a href='mailto:'> biuro@agmitransport.pl </a>
+            <a href='mailto:biuro@agmitransport.pl'> biuro@agmitransport.pl </a>
+            <a href='mailto:andrzej@agmitransport.pl'>
+              andrzej@agmitransport.pl
+            </a>
           </p>
         </div>
       </div>

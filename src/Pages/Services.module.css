@@ -23,7 +23,7 @@
 }
 
 .three-in-row {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 50px;
   margin-bottom: 6rem;
 }
@@ -35,17 +35,15 @@
 }
 
 .container img {
-  width: 40%;
+  width: auto;
+  height: auto;
   margin: 0 auto;
   transform: rotateY(180deg);
   margin-bottom: 10px;
 }
 
-.mid-truck {
-  transform: translateX(-20%) rotateY(180deg) !important;
-}
-
 .container h3 {
+  text-align: center;
   text-transform: uppercase;
   font-size: 24px;
   line-height: 26px;
@@ -55,7 +53,37 @@
 
 .container h4 {
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 3px;
+}
+
+.container ol {
+  list-style: disc;
+  margin-left: 18px;
+  margin-bottom: 5px;
+}
+
+.container h5 {
+  font-size: 20px;
+  text-align: center;
+  font-family: 'monsterrat-medium';
+  user-select: none;
+}
+
+.container a {
+  border: 2px solid var(--main-yellow);
+  background-color: var(--main-yellow);
+  width: fit-content;
+  margin: 10px auto;
+  padding: 5px 35px;
+  text-transform: uppercase;
+  font-family: 'monsterrat-Bold';
+  color: #1a1a1a;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+.container a:hover {
+  background-color: #fff;
 }
 
 .container ol {
@@ -78,49 +106,41 @@
 }
 
 .freeze img {
-  transform: rotateY(180deg);
-  filter: brightness(0.75);
   width: 100%;
+  height: auto;
 }
 
-.freeze-text h3,
-.ocean-text h3 {
+.freeze-text h3 {
   font-size: 44px;
   line-height: 52px;
+  text-transform: uppercase;
   color: var(--text-gray);
-  padding-top: 45px;
 }
 
 .freeze-text h3 {
   text-align: right;
 }
 
-.ocean-text h3 {
-  text-align: left;
-}
-
-.ocean-text h4,
 .freeze-text h4 {
   font-size: 18px;
   line-height: 22px;
 }
 
-.freeze-text h4,
-.freeze-text ol {
+.freeze-text h4 {
   width: 90%;
   margin-left: auto;
 }
 
-.freeze-text ol > li,
-.ocean-text ol > li {
-  font-size: 17px;
-  font-family: 'monsterrat-light';
+.freeze-text ol {
+  list-style-type: disc;
 }
 
-.freeze-text li > span,
-.ocean-text li > span {
-  font-weight: bold;
-  font-family: 'monsterrat-light';
+.freeze-text ol > li {
+  margin-left: 20px;
+  padding: 2px 0;
+  font-size: 17px;
+  font-family: 'monsterrat-medium';
+  color: #1a1a1a;
 }
 
 @media screen and (max-width: 1200px) {
@@ -133,8 +153,7 @@
     margin: 0 0 20px 0;
   }
 
-  .freeze,
-  .ocean {
+  .freeze {
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -161,17 +180,13 @@
     transform: rotateY(180deg) !important;
   }
 
-  .freeze img,
-  .ocean img {
-    width: 98%;
-    justify-self: center;
+  .freeze h3 {
+    padding-bottom: 15px;
+    font-size: 38px;
+    line-height: 40px;
   }
 
   .freeze ol {
     padding-bottom: 10px;
-  }
-
-  .ocean-text h3 {
-    padding-top: 10px;
   }
 }

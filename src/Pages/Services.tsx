@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import busIcon from '../assets/busicon.webp';
-import midTruck from '../assets/midTruck.webp';
-import oceanImg from '../assets/service.webp';
+import oceanImg from '../assets/serwis.webp';
 import Truck from '../assets/truck.webp';
 import styles from './Services.module.css';
 
@@ -21,79 +21,66 @@ const Services: React.FC = () => {
       <div className={`${styles.services}`}>
         <div className={`${styles['three-in-row']} grid`}>
           <div className={`${styles.container} grid`}>
-            <img src={busIcon} alt='Pojazdy o ładowności 1.5 - 7.5 tony' />
-            <h3>POJAZDY O ŁADOWNOŚCI 1.5 - 7.5 TONY</h3>
-            <h4>Opis usługi, Opis usługi, Opis usługi, Opis usługi</h4>
-            <ol>
-              <li>
-                <span>Zasięg: </span>
-              </li>
-              <li>
-                <span>Flota:</span>
-              </li>
-              <li>
-                <span>Ładowność:</span> 1.5 - 7.5 tony
-              </li>
-              <li>
-                <span>Dodatkowe informacje:</span>
-              </li>
-            </ol>
+            <img src={busIcon} alt='TRANSPORT KRAJOWY I SPEDYCJA' />
+            <h3>TRANSPORT KRAJOWY I SPEDYCJA</h3>
+            <h4>
+              Realizujemy zlecenia transportowe ciężarowe pojazdami o
+              ładowaności od 100 kg do 24000 kg, wspierając zarówno duże, jak i
+              mniejsze przedsiębiorstwa. Oferujemy zarówno usługi całopojazdowe
+              FTL, jak i drobnicowe LTL.
+            </h4>
+            <h5>Napisz, a wycenimy Twój transport!</h5>
+            <Link to='/kontakt'>Kontakt</Link>
           </div>
 
           <div className={`${styles.container} grid`}>
             <img
-              src={midTruck}
-              alt='Standardowymi plandekami o ładowności do 24 ton'
+              src={Truck}
+              alt='TRANSPORT I SPEDYCJA MIĘDZYNARODOWA'
               className={styles['mid-truck']}
             />
-            <h3>STANDARDOWYMI PLANDEKAMI O ŁADOWNOŚCI DO 24 TON</h3>
-            <h4>Opis usługi, Opis usługi, Opis usługi, Opis usługi</h4>
+            <h3>TRANSPORT I SPEDYCJA MIĘDZYNARODOWA</h3>
+            <h4>
+              Interesuje Cię transport międzynarodowy lub usługa spedycyjna.
+              Skontaktuj się z nami, a my zaplanujemy i zrealizujemy ją
+              posiadanym przez nas nowoczesnym taborem samochodowym. <br />
+              Nasza flota to:
+            </h4>
             <ol>
-              <li>
-                <span>Zasięg: </span>
-              </li>
-              <li>
-                <span>Flota:</span>
-              </li>
-              <li>
-                <span>Ładowność:</span> Do 24 ton
-              </li>
-              <li>
-                <span>Dodatkowe informacje:</span>
-              </li>
+              <li>Plandeki o ładowności do 24 ton,</li>
+              <li>zestawy chłodnicze o ładowności do 23 ton,</li>
+              <li>samochody typu bus (8ep) i solo (16ep).</li>
             </ol>
-          </div>
-
-          <div className={`${styles.container} grid`}>
-            <img src={Truck} alt='Pojazdami chłodniczymi oraz izotermami' />
-            <h3>POJAZDAMI CHŁODNICZYMI ORAZ IZOTERMAMI</h3>
-            <h4>Opis usługi, Opis usługi, Opis usługi, Opis usługi</h4>
-            <ol>
-              <li>
-                <span>Zasięg: </span>
-              </li>
-              <li>
-                <span>Flota:</span>
-              </li>
-              <li>
-                <span>Ładowność:</span>
-              </li>
-              <li>
-                <span>Dodatkowe informacje:</span>
-              </li>
-            </ol>
+            <h4>
+              Organizujemy transorty całopojazdowe FTL oraz drobnicowe LTL.
+            </h4>
           </div>
         </div>
 
         <div className={`${styles['freeze']} grid`}>
           <div className={styles['freeze-text']}>
-            <h3>SERWIS SAMOCHODÓW CIĘŻAROWYCH</h3>
+            <h3>SERWIS SAMOCHODOWY</h3>
             <h4>
-              Opis usługi, Opis usługi, Opis usługi, Opis usługi, Opis usługi,
-              Opis usługi, Opis usługi, Opis usługi, Opis usługi, Opis usługi,
-              Opis usługi, Opis usługi, Opis usługi, Opis usługi, Opis usługi,
-              Opis usługi, Opis usługi, Opis usługi, Opis usługi, Opis usługi,
-              Opis usługi, Opis usługi, Opis usługi, Opis usługi, Opis usługi
+              Trans Service specjalizuje się w naprawach samochodów ciężarowych,
+              osobowych oraz naczep. <br />
+              Podstawowy zakres usług obejmuje:
+              <ol>
+                <li>naprawy główne i bieżące silników,</li>
+                <li>wymianę układów rozrządu,</li>
+                <li>wymianę sprzęgieł oraz skrzyni biegów,</li>
+                <li>wymianę oleju,</li>
+                <li>
+                  diagnostykę i naprawę układów hamulcowych i kierowniczych,
+                </li>
+                <li>diagnostykę i naprawę instalacji elektrycznych.</li>
+                <li>
+                  Inne prace związane z usuwaniem bieżących usterek
+                  eksploatacyjnych.
+                </li>
+              </ol>
+              Świadczymy również usługi z zakresu sprzedaży, wymiany oraz
+              wulkanizacji opon. <br /> kontakt : +48 508 153 332 <br /> e-mail
+              : serwis@agmitransport.pl
             </h4>
           </div>
           <img src={oceanImg} alt='Serwis samochodów ciężarowych' />
