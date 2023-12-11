@@ -12,6 +12,8 @@
 
 .first-row {
   margin-bottom: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 35px;
 }
 
 .second-row {
@@ -31,17 +33,10 @@
   bottom: 15px;
   background-color: #fff;
   color: var(--text-gray);
-  width: 50%;
+  width: 60%;
   padding: 2rem 1rem;
   border: 2px solid var(--main-yellow);
-}
-
-.left-container {
   right: 15px;
-}
-
-.right-container {
-  left: 15px;
 }
 
 .container-text h3 {
@@ -59,8 +54,20 @@
   margin-bottom: 10px !important;
 }
 
+.hour-wrap {
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  background-color: #fff;
+  border: 1px solid var(--main-yellow);
+  border-radius: 10px;
+  padding: 5px;
+}
+
 .hour {
   font-family: 'monsterrat-medium';
+  font-size: 18px;
+  text-align: center;
 }
 
 .container-text a {
@@ -201,7 +208,9 @@
   }
 
   .about-us h3 {
-    width: 85%;
+    width: 95%;
+    font-size: 22px;
+    line-height: 24px;
   }
 
   .zaleta,
@@ -211,5 +220,12 @@
 
   .buttons-wrap {
     display: grid;
+  }
+
+  .hour-wrap {
+    position: relative;
+    border: 0;
+    top: 0;
+    right: 0;
   }
 }

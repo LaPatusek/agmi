@@ -30,15 +30,14 @@
 
 .container {
   justify-self: center;
-  align-self: center;
+  align-self:flex-start;
   padding: 2rem 0.5rem;
 }
 
 .container img {
   width: auto;
-  height: auto;
+  height: 250px;
   margin: 0 auto;
-  transform: rotateY(180deg);
   margin-bottom: 10px;
 }
 
@@ -53,6 +52,7 @@
 
 .container h4 {
   font-size: 18px;
+  line-height: 20px;
   margin-bottom: 3px;
 }
 
@@ -60,6 +60,12 @@
   list-style: disc;
   margin-left: 18px;
   margin-bottom: 5px;
+}
+
+.container ol > li {
+  font-family: 'monsterrat-bold';
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .container h5 {
@@ -74,7 +80,8 @@
   background-color: var(--main-yellow);
   width: fit-content;
   margin: 10px auto;
-  padding: 5px 35px;
+  padding: 7px 40px;
+  font-size: 18px;
   text-transform: uppercase;
   font-family: 'monsterrat-Bold';
   color: #1a1a1a;
@@ -95,8 +102,7 @@
   user-select: none;
 }
 
-.freeze,
-.ocean {
+.freeze {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 50px;
 }
@@ -145,12 +151,16 @@
 
 .hour {
   position: absolute;
-  right: 15px;
+  right: 10px;
   top: 40%;
   font-size: 22px;
   line-height: 24px;
   text-align: right;
   font-family: 'monsterrat-medium';
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid var(--main-yellow);
 }
 
 @media screen and (max-width: 1200px) {
@@ -203,6 +213,8 @@
   .hour {
     position: relative;
     top: 0;
+    right: 0;
     text-align: center;
+    border: 0;
   }
 }

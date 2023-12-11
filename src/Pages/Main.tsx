@@ -45,18 +45,16 @@ const Main: React.FC = () => {
       <div className={styles.oferta}>
         <h2>Sprawdź naszą ofertę</h2>
 
-        <div className={`${styles['first-row']}`}>
+        <div className={`${styles['first-row']} grid`}>
           <div className={`${styles.container} relative`}>
             <img
               src={test}
-              alt='TRANSPORT I SPEDYCJA MIĘDZYNARODOWA'
+              alt='TRANSPORT MIĘDZYNARODOWY I SPEDYCJA'
               width={'100%'}
               height={'650px'}
             />
-            <div
-              className={`${styles['container-text']}  ${styles['right-container']}`}
-            >
-              <h3>TRANSPORT I SPEDYCJA MIĘDZYNARODOWA</h3>
+            <div className={`${styles['container-text']} `}>
+              <h3>TRANSPORT MIĘDZYNARODOWY I SPEDYCJA</h3>
               <p>
                 Interesuje Cię transport międzynarodowy lub usługa spedycyjna.
                 Skontaktuj się z nami, a my zaplanujemy i zrealzujemy ją
@@ -67,8 +65,6 @@ const Main: React.FC = () => {
               </Link>
             </div>
           </div>
-        </div>
-        <div className={`${styles['second-row']} grid`}>
           <div className={`${styles.container} relative`}>
             <img
               src={busPhoto}
@@ -76,9 +72,7 @@ const Main: React.FC = () => {
               width={'100%'}
               height={'650px'}
             />
-            <div
-              className={`${styles['container-text']} ${styles['left-container']}`}
-            >
+            <div className={`${styles['container-text']}`}>
               <h3>TRANSPORT KRAJOWY I SPEDYCJA</h3>
               <p>
                 Realizujemy zlecenia transportowe ciężarowe pojazdami o
@@ -99,18 +93,19 @@ const Main: React.FC = () => {
               height={'650px'}
               className={styles['service-image']}
             />
-            <div
-              className={`${styles['container-text']} ${styles['left-container']}`}
-            >
+            <div className={styles['hour-wrap']}>
+              <p className={styles.hour}>
+                Godziny otwarcia <br />
+                Pon. - Pn. <br /> 8:00 - 17:00 <br /> Sobota <br /> 8:00 - 13:00
+              </p>
+            </div>
+            <div className={`${styles['container-text']}`}>
               <h3>SERWIS SAMOCHODOWY</h3>
               <p className={styles['service-paragraph']}>
                 Trans Service specjalizuje się w naprawach samochodów
                 ciężarowych, osobowych oraz naczep. <br />{' '}
               </p>
-              <p className={styles.hour}>
-                Godziny otwarcia <br />
-                Pon. - Pn. 8:00 - 17:00 <br /> Sobota 8:00 - 13:00
-              </p>
+
               <Link to='/oferta'>
                 Więcej informacji <ArrowRight2 size={'18'} />
               </Link>
@@ -124,15 +119,15 @@ const Main: React.FC = () => {
           Firma AGMI Transport rozpoczęła działalność w sektorze usług
           transportowych w roku 2002. <br />
           Specjalizujemy się w usługach w zakresie przewozów krajowych i
-          międzynarodowych. To, co nas wyróżnia to konkurencyjne ceny przy
-          zachowaniu wysokiej jakości świadczonych usług oraz kompleksowa
+          międzynarodowych. <br /> To, co nas wyróżnia to konkurencyjne ceny
+          przy zachowaniu wysokiej jakości świadczonych usług oraz kompleksowa
           obsługa klientów. Priorytetem naszego działania jest terminowość
-          dostaw. Przez lata obecności na rynku zdobyliśmy cenne doświadczenie i
-          wypracowaliśmy procedury zapewniające profesjonalną obsługę naszych
-          kontrahentów. Od wielu lat jesteśmy partnerem dla takich firm jak
-          JAS-FBG S.A oraz RABEN Logistics. <br />
+          dostaw. <br /> Przez lata obecności na rynku zdobyliśmy cenne
+          doświadczenie i wypracowaliśmy procedury zapewniające profesjonalną
+          obsługę naszych kontrahentów. Od wielu lat jesteśmy partnerem dla
+          takich firm jak JAS-FBG S.A oraz RABEN Logistics. <br />
           Dzięki wykwalifikowanej kadrze pracowniczej jesteśmy rzetelnym i
-          odpowiedzialnym partnerem na rynku usług spedycyjnych i
+          odpowiedzialnym partnerem <br /> na rynku usług spedycyjnych i
           transportowych. <br />
           <span> Zapraszamy do współpracy!</span>
         </h3>
