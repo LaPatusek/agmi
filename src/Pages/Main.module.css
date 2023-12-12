@@ -104,9 +104,9 @@
 .about-us h3 {
   text-align: center;
   margin: 0 auto;
-  width: 75%;
-  font-size: 24px;
-  line-height: 26px;
+  width: 70%;
+  font-size: 23px;
+  line-height: 30px;
   margin-bottom: 75px;
 }
 
@@ -208,8 +208,10 @@
   }
 
   .about-us h3 {
-    width: 95%;
-    font-size: 22px;
+    width: 87%;
+    margin-left: 0;
+    text-align: left;
+    font-size: 18px;
     line-height: 24px;
   }
 
