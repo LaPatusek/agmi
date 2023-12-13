@@ -12,7 +12,7 @@ const Services: React.FC = () => {
         <h1>
           Z nami jesteś <br /> zawsze na czas
         </h1>
-        <h2>Świadczymy usługi na terenie Polski, Unii Europejskiej</h2>
+        <h2>Świadczymy usługi na terenie Polski oraz Unii Europejskiej</h2>
       </div>
 
       <div className={`${styles.services}`}>
@@ -44,9 +44,9 @@ const Services: React.FC = () => {
               Nasza flota to:
             </h4>
             <ol>
-              <li>Naczepy plandeki o ładowności do 24 ton,</li>
-              <li>naczepy chłodnicze o ładowności do 23 ton,</li>
-              <li>samochody typu bus (8ep) i solo (16ep).</li>
+              <li>naczepy plandeki o ładowności do 24 ton</li>
+              <li>naczepy chłodnicze</li>
+              <li>samochody typu bus</li>
             </ol>
             <h4>
               Organizujemy transorty całopojazdowe FTL oraz drobnicowe LTL.
@@ -63,16 +63,16 @@ const Services: React.FC = () => {
               osobowych oraz naczep. <br />
               Podstawowy zakres usług obejmuje:
               <ol>
-                <li>naprawy główne i bieżące silników,</li>
-                <li>wymianę układów rozrządu,</li>
-                <li>wymianę sprzęgieł oraz skrzyni biegów,</li>
-                <li>wymianę oleju,</li>
+                <li>naprawy główne i bieżące silników</li>
+                <li>wymianę układów rozrządu</li>
+                <li>wymianę sprzęgieł oraz skrzyni biegów</li>
+                <li>wymianę oleju</li>
                 <li>
-                  diagnostykę i naprawę układów hamulcowych i kierowniczych,
+                  diagnostykę i naprawę układów hamulcowych i kierowniczych
                 </li>
-                <li>diagnostykę i naprawę instalacji elektrycznych.</li>
+                <li>diagnostykę i naprawę instalacji elektrycznych</li>
                 <li>
-                  Inne prace związane z usuwaniem bieżących usterek
+                  inne prace związane z usuwaniem bieżących usterek
                   eksploatacyjnych.
                 </li>
               </ol>

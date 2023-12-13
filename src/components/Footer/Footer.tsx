@@ -82,8 +82,8 @@ const Footer: React.FC = () => {
                 </svg>
               </div>
               <p>
-                <a href='mailto:andrzej@agmitransport.pl'>
-                  andrzej@agmitransport.pl
+                <a href='mailto:biuro@agmitransport.pl'>
+                  biuro@agmitransport.pl
                 </a>
               </p>
             </div>

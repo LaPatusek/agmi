@@ -54,6 +54,7 @@
   font-size: 18px;
   line-height: 20px;
   margin-bottom: 3px;
+  font-family: 'monsterrat-medium';
 }
 
 .container ol {
@@ -63,7 +64,7 @@
 }
 
 .container ol > li {
-  font-family: 'monsterrat-bold';
+  font-family: 'monsterrat-medium';
   font-size: 18px;
   line-height: 22px;
 }

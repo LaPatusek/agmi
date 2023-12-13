@@ -54,12 +54,9 @@ const Main: React.FC = () => {
               height={'650px'}
             />
             <div className={`${styles['container-text']} `}>
-              <h3>TRANSPORT MIĘDZYNARODOWY I SPEDYCJA</h3>
-              <p>
-                Interesuje Cię transport międzynarodowy lub usługa spedycyjna.
-                Skontaktuj się z nami, a my zaplanujemy i zrealzujemy ją
-                posiadanym przez nas nowoczesnym taborem samochodowym.
-              </p>
+              <h3>
+                TRANSPORT MIĘDZYNARODOWY <br /> I SPEDYCJA
+              </h3>
               <Link to='/oferta'>
                 Więcej informacji <ArrowRight2 size={'18'} />
               </Link>
@@ -73,13 +70,9 @@ const Main: React.FC = () => {
               height={'650px'}
             />
             <div className={`${styles['container-text']}`}>
-              <h3>TRANSPORT KRAJOWY I SPEDYCJA</h3>
-              <p>
-                Realizujemy zlecenia transportowe ciężarowe pojazdami o
-                ładowaności od 100 kg do 24000 kg, wspierając zarówno duże, jak
-                i mniejsze przedsiębiorstwa. Oferujemy zarówno usługi
-                całopojazdowe FTL, jak i drobnicowe LTL.
-              </p>
+              <h3>
+                TRANSPORT KRAJOWY <br /> I SPEDYCJA
+              </h3>
               <Link to='/oferta'>
                 Więcej informacji <ArrowRight2 size={'18'} />
               </Link>
@@ -93,18 +86,8 @@ const Main: React.FC = () => {
               height={'650px'}
               className={styles['service-image']}
             />
-            <div className={styles['hour-wrap']}>
-              <p className={styles.hour}>
-                Godziny otwarcia <br />
-                Pon. - Pn. <br /> 8:00 - 17:00 <br /> Sobota <br /> 8:00 - 13:00
-              </p>
-            </div>
             <div className={`${styles['container-text']}`}>
               <h3>SERWIS SAMOCHODOWY</h3>
-              <p className={styles['service-paragraph']}>
-                Trans Service specjalizuje się w naprawach samochodów
-                ciężarowych, osobowych oraz naczep. <br />{' '}
-              </p>
 
               <Link to='/oferta'>
                 Więcej informacji <ArrowRight2 size={'18'} />
@@ -125,7 +108,7 @@ const Main: React.FC = () => {
           dostaw. <br /> Przez lata obecności na rynku zdobyliśmy cenne
           doświadczenie i wypracowaliśmy procedury zapewniające profesjonalną
           obsługę naszych kontrahentów. Od wielu lat jesteśmy partnerem dla
-          takich firm jak JAS-FBG S.A oraz RABEN Logistics. <br />
+          takich firm jak JAS-FBG S.A. oraz RABEN Logistics. <br />
           Dzięki wykwalifikowanej kadrze pracowniczej jesteśmy rzetelnym i
           odpowiedzialnym partnerem <br /> na rynku usług spedycyjnych i
           transportowych. <br />
