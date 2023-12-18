@@ -39,6 +39,13 @@
   font-family: 'monsterrat-regular';
 }
 
+.mails p {
+  font-family: 'monsterrat-bold';
+  display: grid;
+  width: fit-content;
+  margin: 0 auto 15px auto;
+}
+
 .map-button {
   cursor: pointer;
   width: fit-content;

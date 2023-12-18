@@ -150,20 +150,44 @@ const Kontakt: React.FC = () => {
       </div>
 
       <div className={styles['wymagania-wrap']}>
-        <h3>KIEROWCA W TRANSPORCIE MIĘDZYNARODOWYM</h3>
+        <h3>KIEROWCA W TRANSPORCIE KRAJOWYM</h3>
 
         <h4>Wymagania:</h4>
         <ol>
-          <li>Doświadczenie zawodowe</li>
-          <li>Dyspozycyjność</li>
-          <li>Samodzielność, skrupulatność oraz rzetelność</li>
+          <li>prawo jazdy kat. C+E</li>
+          <li>karta kierowcy</li>
+          <li>dyspozycyjność</li>
+          <li>mile widziane uprawnienia ADR</li>
+          <li>
+            akceptujemy również osoby bez doświadczenia po wstępnej kwalifikacji
+          </li>
         </ol>
 
         <h4>Oferujemy:</h4>
         <ol>
-          <li>Atrakcyjne wynagrodzenie</li>
-          <li>Przyjazną atmosferę</li>
-          <li>Umowa o pracę lub kontrakt B2B</li>
+          <li>stabilne warunki pracy w stale rozwijającym się firmie</li>
+          <li>umowa o pracę lub kontrakt B2B</li>
+          <li>atrakcyjne wynagrodzenie</li>
+          <li>pakiet socjalny</li>
+          <li>premie uznaniowe</li>
+        </ol>
+
+        <h3>KIEROWCA W TRANSPORCIE MIĘDZYNARODOWYM</h3>
+        <h4>Wymagania:</h4>
+        <ol>
+          <li>doświadczenie</li>
+          <li>prawo jazdy kat. C+E</li>
+          <li>karta kierowcy</li>
+          <li>dyspozycyjność</li>
+          <li>
+            akceptujemy również osoby bez doświadczenia po wstępnej kwalifikacji
+          </li>
+        </ol>
+        <h4>Oferujemy:</h4>
+        <ol>
+          <li>stabilne warunki pracy w stale rozwijającym się firmie</li>
+          <li>umowa o pracę lub kontrakt B2B</li>
+          <li>atrakcyjne wynagrodzenie</li>
         </ol>
       </div>
 
