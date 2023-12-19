@@ -126,7 +126,7 @@ const Kontakt: React.FC = () => {
         <div className={`${styles.container} center`}>
           <Call variant='Bold' size={iconSize} />
           <p>17 783 43 31</p>
-          <p>535 198 620</p>
+          <p>504 172 071</p>
         </div>
 
         <div className={`${styles.container} center`}>

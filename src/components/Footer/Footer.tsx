@@ -66,7 +66,10 @@ const Footer: React.FC = () => {
               <div className={styles['icon-container']}>
                 <Call variant='Bold' color='#1a1a1a' />
               </div>
-              <p>tel. 504 172 071</p>
+              <div>
+                <p>504 172 071</p>
+                <p>17 783 43 31</p>
+              </div>
             </div>
 
             <div className={`${styles.container} flex relative`}>

@@ -142,17 +142,17 @@ const Kontakt: React.FC = () => {
     <div className={styles.kontakt}>
       <div className={`${styles['kontakt-header']} center`}>
         <h1>Dołącz do naszego zespołu</h1>
-        <h2>
-          On this page you can find our contact details and a simple form you
-          <br />
-          can submit if you have specific queries you would like our feedback on
-        </h2>
       </div>
 
       <div className={styles['wymagania-wrap']}>
-        <h3>KIEROWCA W TRANSPORCIE KRAJOWYM</h3>
+        <h2>
+          KIEROWCA W TRANSPORCIE KRAJOWYM <br />
+          <span>
+            Codzienne powroty do domu lub wyjazdy tygodniowe weekendy w domu.
+          </span>
+        </h2>
 
-        <h4>Wymagania:</h4>
+        <h3>Wymagania:</h3>
         <ol>
           <li>prawo jazdy kat. C+E</li>
           <li>karta kierowcy</li>
@@ -163,7 +163,7 @@ const Kontakt: React.FC = () => {
           </li>
         </ol>
 
-        <h4>Oferujemy:</h4>
+        <h3>Oferujemy:</h3>
         <ol>
           <li>stabilne warunki pracy w stale rozwijającym się firmie</li>
           <li>umowa o pracę lub kontrakt B2B</li>
@@ -172,7 +172,7 @@ const Kontakt: React.FC = () => {
           <li>premie uznaniowe</li>
         </ol>
 
-        <h3>KIEROWCA W TRANSPORCIE MIĘDZYNARODOWYM</h3>
+        <h2>KIEROWCA W TRANSPORCIE MIĘDZYNARODOWYM</h2>
         <h4>Wymagania:</h4>
         <ol>
           <li>doświadczenie</li>

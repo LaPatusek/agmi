@@ -47,7 +47,7 @@ const Blog = ({ posts }) => {
           ))}
 
         {itemsShowed &&
-          posts?.map((post) => (
+          posts?.map((post: Post) => (
             <Link key={post.id} to={`/article/${post.slug}`}>
               <div className={`${styles['post-container']} grid`}>
                 <img

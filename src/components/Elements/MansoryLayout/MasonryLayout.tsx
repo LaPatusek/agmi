@@ -1,32 +1,46 @@
 import React from 'react';
 import Masonry from 'react-masonry-css';
-import images from '../../../json/images.json';
+import { Link } from 'react-router-dom';
 import styles from './MasonryLayout.module.css';
 
-const MasonryLayout: React.FC = () => {
+interface galleryPost {
+  slug: string;
+  imie: string;
+  lokalizacja: string;
+  zdjecie: {
+    url: string;
+  };
+}
+
+interface MasonryLayoutProps {
+  galleryPosts: galleryPost[];
+}
+
+const MasonryLayout: React.FC<MasonryLayoutProps> = ({ galleryPosts }) => {
   const breakpointColumnsObj = {
     default: 3,
     800: 2,
     500: 1,
   };
 
-  const renderedImages = images.images.map((image) => {
-    return (
-      <div
-        id={image.id}
-        key={image.id + image.kierowca}
-        className={`${styles.image} relative`}
-      >
-        <img src={image.src} width='100%' height={'100%'} alt={image.id} />
+  const renderedImages = galleryPosts?.map((post: galleryPost) => (
+    <div className={`${styles.image} relative`} key={post.slug}>
+      <Link to={`/galeria/${post.slug}`}>
+        <img
+          src={post.zdjecie.url}
+          alt={post.lokalizacja}
+          width={'100%'}
+          height={'100%'}
+        />
         <div className={styles['image-text']}>
           <div className={styles['text-wrap']}>
-            <h2>{image.kierowca}</h2>
-            <h3>{image.miejsce}</h3>
+            <h2>{post.imie}</h2>
+            <h3>{post.lokalizacja}</h3>
           </div>
         </div>
-      </div>
-    );
-  });
+      </Link>
+    </div>
+  ));
 
   return (
     <div className={`${styles.gallery} grid`}>

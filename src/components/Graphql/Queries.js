@@ -12,6 +12,13 @@ description,
 photo { url }
 `;
 
+const GaleriaPost = `
+imie,
+lokalizacja,
+slug,
+zdjecie { url },
+`;
+
 export const QUERY_POSTS = gql`
     {
         posts()
@@ -27,6 +34,25 @@ export const QUERY_ONE_POSTS = gql`
         posts(where: {slug: $slug}) 
         {
         ${post}
+    }
+    }
+`;
+
+export const GALLERY_POSTS = gql`
+    {
+        galeriaPosts()
+        {
+            ${GaleriaPost}
+        }
+    }
+`;
+
+export const GALLERY_ONE_POSTS = gql`
+    query getOnePost($slug: String!) 
+    {
+        galeriaPosts(where: {slug: $slug}) 
+        {
+        ${GaleriaPost}
     }
     }
 `;

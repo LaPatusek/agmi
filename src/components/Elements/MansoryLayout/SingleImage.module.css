@@ -1,0 +1,26 @@
+.image {
+  margin: 2rem auto 4rem auto;
+  width: fit-content;
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  letter-spacing: 0.2px;
+  padding: 0 10px;
+}
+
+.text h3 {
+  text-align: right;
+}
+
+@media screen and (max-width: 900px) {
+  .image {
+    margin: 0 0 4rem 0;
+  }
+
+  .image img {
+    width: 100%;
+  }
+}

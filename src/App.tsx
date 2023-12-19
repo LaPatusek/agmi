@@ -6,6 +6,7 @@ import Main from './Pages/Main.tsx';
 import Rekrutacja from './Pages/Rekrutacja.tsx';
 import Services from './Pages/Services.tsx';
 import Artykul from './components/Blog/Artykul.tsx';
+import SingleImage from './components/Elements/MansoryLayout/SingleImage.tsx';
 import Footer from './components/Footer/Footer.tsx';
 import Nav from './components/Nav/Nav.tsx';
 
@@ -36,6 +37,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path='/main' element={<Main />} />
           <Route path='/galeria' element={<Galeria />} />
+          <Route path='/galeria/:slug' element={<SingleImage />} />
           <Route path='/kontakt' element={<Kontakt />} />
           <Route path='/oferta' element={<Services />} />
           <Route path='/rekrutacja' element={<Rekrutacja />} />
