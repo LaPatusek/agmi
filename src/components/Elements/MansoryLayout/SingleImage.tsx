@@ -38,7 +38,7 @@ const SingleImage: React.FC = () => {
               width={'auto'}
             />
             <div className={styles.text}>
-              <h2>{singlePost.imie}, {singlePost.imie}</h2>
+              <h2>{singlePost.imie}</h2>
               <h3>{singlePost.lokalizacja}</h3>
             </div>
           </div>
