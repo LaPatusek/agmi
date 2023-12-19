@@ -102,16 +102,16 @@ const Main: React.FC = () => {
           Firma AGMI Transport rozpoczęła działalność w sektorze usług
           transportowych w roku 2002. <br />
           Specjalizujemy się w usługach w zakresie przewozów krajowych i
-          międzynarodowych. <br /> To, co nas wyróżnia to konkurencyjne ceny
+          mię&shy;dzy&shy;narodowych. <br /> To, co nas wyróżnia to konkurencyjne ceny
           przy zachowaniu wysokiej jakości świadczonych usług oraz kompleksowa
           obsługa klientów. Priorytetem naszego działania jest terminowość
           dostaw. <br /> Przez lata obecności na rynku zdobyliśmy cenne
-          doświadczenie i wypracowaliśmy procedury zapewniające profesjonalną
+          doświadczenie i wy&shy;praco&shy;waliśmy procedury zapewniające profesjonalną
           obsługę naszych kontrahentów. Od wielu lat jesteśmy partnerem dla
           takich firm jak JAS-FBG S.A. oraz RABEN Logistics. <br />
           Dzięki wykwalifikowanej kadrze pracowniczej jesteśmy rzetelnym i
-          odpowiedzialnym partnerem <br /> na rynku usług spedycyjnych i
-          transportowych. <br />
+          odpo&shy;wiedzialnym partnerem na rynku usług spedycyjnych i
+          tran&shy;sportowych. <br />
           <span> Zapraszamy do współpracy!</span>
         </h3>
         <div className={`${styles['zalety-wrap']} grid`}>

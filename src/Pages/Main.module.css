@@ -79,7 +79,7 @@
 .about-us h3 {
   text-align: center;
   margin: 0 auto;
-  width: 70%;
+  width: 68%;
   font-size: 23px;
   line-height: 30px;
   margin-bottom: 75px;
@@ -133,12 +133,20 @@
   .container-text {
     width: 65%;
   }
+
+  .about-us h3 {
+    width: 90%;
+  }
 }
 
-@media screen and (max-width: 1400px)  {
-.container-text {
-  width: 75%;
-}
+@media screen and (max-width: 1400px) {
+  .container-text {
+    width: 75%;
+  }
+
+  .about-us h3 {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -170,9 +178,13 @@
     bottom: 0px;
     border: 0;
   }
+
+  .about-us {
+    padding: 0 3rem 6rem 3rem;
+  }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .oferta {
     padding: 4rem 1.5rem;
   }
@@ -195,11 +207,13 @@
   }
 
   .about-us h3 {
-    width: 87%;
+    width: 95%;
+    letter-spacing: 0.4px;
     margin-left: 0;
     text-align: left;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 24px;
+    word-wrap: break-word;
   }
 
   .zaleta,
