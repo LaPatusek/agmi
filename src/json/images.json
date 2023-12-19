@@ -9,14 +9,14 @@
     {
       "id": "2",
       "src": "images/zdj3.jpg",
-      "kierowca": "Damian",
+      "kierowca": "",
       "miejsce": "Polska, Katowice"
     },
     {
       "id": "3",
       "src": "images/zdj2.jpg",
       "kierowca": "Marek",
-      "miejsce": "Chorwacja, Zagrzeb"
+      "miejsce": ""
     },
     {
       "id": "4",
