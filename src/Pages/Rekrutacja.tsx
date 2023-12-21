@@ -4,6 +4,12 @@ import React, { useState } from 'react';
 import useInput from '../components/Hooks/useInput.tsx';
 import styles from './Rekrutacja.module.css';
 
+declare var process: {
+  env: {
+    REACT_APP_API_URL: string;
+  };
+};
+
 const Kontakt: React.FC = () => {
   const [formIsSent, setFormIsSent] = useState<boolean>(false);
   const [enteredFile, setEnteredFile] = useState<File | null>(null);
@@ -127,11 +133,15 @@ const Kontakt: React.FC = () => {
 
   const sendEmail = async (formData: FormData) => {
     try {
-      await axios.post('http://localhost:3001/send-email', formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
+      await axios.post(
+        `${process.env.REACT_APP_API_URL}/send-email`,
+        formData,
+        {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
         },
-      });
+      );
       console.log('Email sent successfully');
     } catch (error) {
       console.error('Error sending email:', error);

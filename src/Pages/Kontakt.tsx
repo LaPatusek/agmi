@@ -1,13 +1,23 @@
+import emailjs from '@emailjs/browser';
 import { ArrowCircleDown2, Call, Location } from 'iconsax-react';
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Map from '../components/Elements/Map/Map.tsx';
 import useInput from '../components/Hooks/useInput.tsx';
 import styles from './Kontakt.module.css';
 
+declare var process: {
+  env: {
+    REACT_APP_SMTP_ID: string;
+    REACT_APP_TEMPLATE_ID: string;
+    REACT_APP_PUBLIC_KEY: string;
+  };
+};
+
 const Kontakt: React.FC = () => {
   const [formIsSent, setFormIsSent] = useState<boolean>(false);
   const iconSize = 36;
+  const formRef = useRef(null);
 
   const {
     value: enteredName,
@@ -95,6 +105,22 @@ const Kontakt: React.FC = () => {
       return;
     }
 
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SMTP_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        formRef.current!,
+        process.env.REACT_APP_PUBLIC_KEY,
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        },
+      );
+
     setFormIsSent(true);
     nameReset();
     surnameReset();
@@ -153,7 +179,7 @@ const Kontakt: React.FC = () => {
             <path d='M424 80H88a56.06 56.06 0 00-56 56v240a56.06 56.06 0 0056 56h336a56.06 56.06 0 0056-56V136a56.06 56.06 0 00-56-56zm-14.18 92.63l-144 112a16 16 0 01-19.64 0l-144-112a16 16 0 1119.64-25.26L256 251.73l134.18-104.36a16 16 0 0119.64 25.26z' />
           </svg>
           <p>
-            BIURO OBSŁUGI KLIENTA
+            BIURO SPÓŁKI
             <a href='mailto:karolina@agmitransport.pl'>
               karolina@agmitransport.pl
             </a>
@@ -169,14 +195,14 @@ const Kontakt: React.FC = () => {
           </p>
           <p>
             KSIĘGOWOŚĆ
-            <a href='mailto:sylwia@agmitranport.pl'>sylwia@agmitranport.pl</a>
+            <a href='mailto:sylwia@agmitransport.pl'>sylwia@agmitransport.pl</a>
           </p>
         </div>
       </div>
 
       <div className={`${styles['form-wrap']} grid`}>
         <h3>Wyślij do nas wiadomość</h3>
-        <form onSubmit={formHandler}>
+        <form onSubmit={formHandler} ref={formRef}>
           <div className={`${styles['rows-wrap']} grid`}>
             <div className={`${styles['first-row']} grid`}>
               <label
