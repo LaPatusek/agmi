@@ -26,7 +26,7 @@ const Blog = ({ posts }) => {
       <h3>Aktualności</h3>
       <div className={`${styles.blog} grid`}>
         {!itemsShowed &&
-          posts?.slice(0, 1).map((post: Post) => (
+          posts?.slice(0, 5).map((post: Post) => (
             <Link key={post.id} to={`/article/${post.slug}`}>
               <div className={`${styles['post-container']} grid`}>
                 <img
@@ -67,7 +67,7 @@ const Blog = ({ posts }) => {
             </Link>
           ))}
       </div>
-      {posts.length >= 2 && (
+      {posts.length >= 5 && (
         <div className={'grid'}>
           <button
             onClick={ShowAllHandler}

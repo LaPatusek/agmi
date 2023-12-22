@@ -339,7 +339,7 @@ const Kontakt: React.FC = () => {
           {formIsSent && (
             <div className={styles['mess-after-form']}>
               <TickCircle size={26} />
-              <p>Dziękujemy za kontakt!</p>
+              <p>Dziękujemy za zaufanie!</p>
             </div>
           )}
         </form>

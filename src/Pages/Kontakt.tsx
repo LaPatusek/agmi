@@ -1,5 +1,5 @@
 import emailjs from '@emailjs/browser';
-import { ArrowCircleDown2, Call, Location } from 'iconsax-react';
+import { ArrowCircleDown2, Call, Location, TickCircle } from 'iconsax-react';
 import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Map from '../components/Elements/Map/Map.tsx';
@@ -321,6 +321,7 @@ const Kontakt: React.FC = () => {
           </div>
           {formIsSent && (
             <div className={styles['mess-after-form']}>
+              <TickCircle size={26} />
               <p>Dziękujemy za kontakt!</p>
             </div>
           )}
